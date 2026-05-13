@@ -1,0 +1,7 @@
+quic_proj/decrypted/
+quic_proj/raw/
+
+quic_proj/*.pkl
+
+quic_proj/__pycache__/
+quic_proj/*.pyc
