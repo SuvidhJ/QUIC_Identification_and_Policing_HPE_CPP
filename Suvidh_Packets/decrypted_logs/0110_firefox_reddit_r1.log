@@ -1,0 +1,1244 @@
+Frame 1: Packet, 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:36.299225800 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:36.299225800 UTC
+    Epoch Arrival Time: 1775744796.299225800
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 101 bytes (808 bits)
+    Capture Length: 101 bytes (808 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 23.41.121.22, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 87
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 55
+    Protocol: UDP (17)
+    Header Checksum: 0xac63 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 23.41.121.22
+    Destination Address: 172.16.90.227
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 443, Dst Port: 58381
+    Source Port: 443
+    Destination Port: 58381
+    Length: 67
+    Checksum: 0x973d [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (59 bytes)
+Data (59 bytes)
+
+0000  4c 52 88 d3 5d f1 33 53 f8 c5 8c 87 9f 4a 7a 74   LR..].3S.....Jzt
+0010  0a 9b 52 54 af 27 ea cb 26 e3 8e 96 24 f3 ee 14   ..RT.'..&...$...
+0020  7d 4e 16 63 72 7d cf 17 ca 6c 8a 4b d1 a3 4a d8   }N.cr}...l.K..J.
+0030  c1 6a 28 a8 ab 95 57 6f 57 bf 9b                  .j(...WoW..
+    Data: 4c5288d35df13353f8c58c879f4a7a740a9b5254af27eacb26e38e9624f3ee147d4e1663727dcf17ca6c8a4bd1a34ad8c16a28a8ab95576f57bf9b
+    [Length: 59]
+
+Frame 2: Packet, 1242 bytes on wire (9936 bits), 1242 bytes captured (9936 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:37.811420300 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:37.811420300 UTC
+    Epoch Arrival Time: 1775744797.811420300
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 1.512194500 seconds]
+    [Time delta from previous displayed frame: 1.512194500 seconds]
+    [Time since reference or first frame: 1.512194500 seconds]
+    Frame Number: 2
+    Frame Length: 1242 bytes (9936 bits)
+    Capture Length: 1242 bytes (9936 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 18.161.111.37, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 1228
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 246
+    Protocol: UDP (17)
+    Header Checksum: 0xf764 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 18.161.111.37
+    Destination Address: 172.16.90.227
+    [Stream index: 1]
+User Datagram Protocol, Src Port: 443, Dst Port: 56655
+    Source Port: 443
+    Destination Port: 56655
+    Length: 1208
+    Checksum: 0xac4f [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (1200 bytes)
+Data (1200 bytes)
+
+0000  42 ba 13 0f 17 23 6f 5d c9 a3 1e 52 7c bf 23 53   B....#o]...R|.#S
+0010  42 ab 48 72 19 b1 eb 68 84 d9 b8 fd 65 b0 bf 49   B.Hr...h....e..I
+0020  81 9b 42 ad 86 3a b7 08 b9 9a 00 8d 7e c7 01 aa   ..B..:......~...
+0030  7a 36 88 21 55 38 ea 42 16 9d 6e e3 fb c3 52 ca   z6.!U8.B..n...R.
+0040  bf 54 63 a1 81 13 bb ac 13 5a 6a 1e 11 22 9b a8   .Tc......Zj.."..
+0050  10 2d 6a 01 2e e2 e9 d8 a3 fb 02 8a 0f fd 75 f3   .-j...........u.
+0060  0c 4a d6 6f 6d 0d 04 13 3d 33 bd 5e 86 f3 73 c3   .J.om...=3.^..s.
+0070  9e 53 d6 e7 1f 43 21 54 7f 2c be aa c2 f0 66 56   .S...C!T.,....fV
+0080  6a 16 a9 70 3a 3d 15 ab 05 f2 0a a3 97 cc c4 de   j..p:=..........
+0090  a9 6c 3e 3b ce 7d d8 ce 77 4b 24 d3 eb 80 51 64   .l>;.}..wK$...Qd
+00a0  d6 38 90 8b 44 2e 72 32 59 3e fd 2a d5 1a 7d c2   .8..D.r2Y>.*..}.
+00b0  5e 8f 92 05 b5 9c 56 81 00 20 50 af f0 42 db 09   ^.....V.. P..B..
+00c0  dc cb 0e 58 d2 a0 ad b0 42 58 c0 6e 14 5a 94 cf   ...X....BX.n.Z..
+00d0  fc 1b 9b f5 db fb 82 aa 50 59 a5 8e 37 2b 45 22   ........PY..7+E"
+00e0  ea e0 fe 0c 77 22 df fa 13 6e 10 33 9a 60 89 75   ....w"...n.3.`.u
+00f0  ab b3 c1 c4 eb 91 b6 6f 1e c8 27 3b 19 a1 10 60   .......o..';...`
+0100  b7 2f de b5 bf 21 08 42 74 a3 ac e7 4e 83 b7 b2   ./...!.Bt...N...
+0110  0b f4 0f 14 4f dd 0b ea 4f 80 f8 dd 1d 0b e8 47   ....O...O......G
+0120  16 c4 0b 02 09 50 0b 34 9e b4 45 b2 2d 89 d5 df   .....P.4..E.-...
+0130  74 c1 29 f3 b2 f0 52 3a 6e a7 cf bd b6 f9 4b 10   t.)...R:n.....K.
+0140  32 7d 73 7a 88 e2 7e 2b 4d f4 f7 0f 4b 66 d7 fe   2}sz..~+M...Kf..
+0150  de 43 a4 c3 1e 14 d4 05 4a 3a b7 15 37 ee c3 32   .C......J:..7..2
+0160  9f 6f cd fc 26 36 14 05 c1 0b 71 9a 86 9a a7 54   .o..&6....q....T
+0170  60 ae 5d 61 7d c4 64 97 bd 3b f9 12 33 52 8d fe   `.]a}.d..;..3R..
+0180  cf 60 27 d4 f9 fe c6 31 a7 25 9a 5d 1c b1 18 55   .`'....1.%.]...U
+0190  08 8f 6c 74 2c 20 d1 68 56 b8 77 75 d0 80 1c 0c   ..lt, .hV.wu....
+01a0  8f 07 ed 98 d1 22 92 ed 10 96 0a 82 af 3b f7 30   .....".......;.0
+01b0  9f 80 b9 b1 e2 05 4f 33 47 b1 dc d6 fd 7a 1d af   ......O3G....z..
+01c0  bd 16 0c f5 aa f7 e4 d2 68 05 4c 80 92 1c 55 7c   ........h.L...U|
+01d0  d7 40 99 f3 6f 96 72 e2 21 61 2f 4a 26 e2 69 70   .@..o.r.!a/J&.ip
+01e0  c2 8b 31 f5 62 13 89 1c 13 57 43 25 40 f1 2f 3f   ..1.b....WC%@./?
+01f0  b4 23 2f 32 43 cf f5 05 55 f2 b1 29 f3 19 e9 8b   .#/2C...U..)....
+0200  d7 7b 6c d1 39 5d a3 83 75 76 e4 99 35 33 0c 71   .{l.9]..uv..53.q
+0210  5b 5e 7b 54 83 db 24 8d 06 bd f7 d4 af 44 37 83   [^{T..$......D7.
+0220  88 f7 e6 77 52 02 21 b6 f1 e5 b5 0f a4 7e e6 82   ...wR.!......~..
+0230  cb 08 d7 17 f6 f8 ab ef 87 d2 88 c7 4d 4d e9 22   ............MM."
+0240  82 22 7a d4 ef 9b f5 f2 10 41 f1 b8 82 75 1b 01   ."z......A...u..
+0250  e7 f7 58 f4 cb 54 5c 41 06 21 6f c9 53 cb 2e b1   ..X..T\A.!o.S...
+0260  de 5e 66 05 3f fd e9 bd 88 0a 27 5b 9b cc e3 42   .^f.?.....'[...B
+0270  41 46 29 18 c4 e9 37 b1 fa f3 48 35 00 e1 10 c4   AF)...7...H5....
+0280  32 0b 04 a1 96 49 b4 67 24 68 b3 45 7b 0d c5 a0   2....I.g$h.E{...
+0290  67 a6 6c 3d b6 2d 03 8e 8e ac 84 df d0 91 4c b8   g.l=.-........L.
+02a0  26 40 6f d9 50 08 60 7a 54 71 00 81 33 fd c7 48   &@o.P.`zTq..3..H
+02b0  7f 35 ad eb b9 fe 3c 54 07 55 08 67 ff 72 c6 51   .5....<T.U.g.r.Q
+02c0  28 6f 55 ba 04 fe 60 44 ab ab 74 fd 81 94 35 75   (oU...`D..t...5u
+02d0  3e 86 cf 4c 93 66 b5 77 0b ba 80 c0 33 a3 69 1a   >..L.f.w....3.i.
+02e0  3b be cc 02 eb fe 53 ce 09 6a ee ce bb 92 6a 61   ;.....S..j....ja
+02f0  00 a3 39 f9 b4 ad ce 1e 7a 5c f7 57 b7 cc 3d 9d   ..9.....z\.W..=.
+0300  7b 10 5f cc 9a 5a 1f d1 bd bb a7 39 ab ae 17 73   {._..Z.....9...s
+0310  10 05 97 d4 54 8a fc ea 30 c4 80 10 06 af 68 d0   ....T...0.....h.
+0320  43 9b 44 ac 98 38 10 05 8f b7 64 47 68 b7 9d 84   C.D..8....dGh...
+0330  3c 96 d6 4a 76 ca db 88 71 07 a3 58 85 7a 2d d9   <..Jv...q..X.z-.
+0340  8b af 19 de 8c 8c 21 95 88 e2 93 32 38 94 70 a5   ......!....28.p.
+0350  a2 d1 9e 45 d6 c7 9e b6 5b af 95 be 4e cb 43 5a   ...E....[...N.CZ
+0360  7d 20 ca 37 74 ea 80 b5 f5 95 a9 f4 a3 cc 95 ce   } .7t...........
+0370  0e d9 3d ad 4d f0 9d b4 72 98 5f 2c 60 57 0c 9b   ..=.M...r._,`W..
+0380  5a 75 b9 84 b0 e0 35 de 45 ad 26 fc 06 1a f4 3f   Zu....5.E.&....?
+0390  5d 27 10 4f 2d 6e af 95 d0 bd 65 c7 a8 78 c1 ef   ]'.O-n....e..x..
+03a0  56 a3 01 5d 19 2c a5 8a 8e e0 25 d4 1a 72 21 fa   V..].,....%..r!.
+03b0  bc bf 0a 76 43 e9 dd cb 29 20 eb aa bd 68 c1 92   ...vC...) ...h..
+03c0  4e 11 ef 8e 63 f8 c6 0b 6e 23 3a 54 c6 29 87 31   N...c...n#:T.).1
+03d0  ed 06 41 18 c3 10 dc c2 de 74 80 9c 1d e8 28 31   ..A......t....(1
+03e0  32 48 31 8a ae 7e 26 de c9 a1 a4 95 da 39 de 07   2H1..~&......9..
+03f0  ff af 2a 29 ae 79 87 8a 91 72 b0 1b 46 4d 3c e5   ..*).y...r..FM<.
+0400  73 df 3f 3b 76 44 2e e4 3f 31 cc 11 c6 93 f0 fc   s.?;vD..?1......
+0410  d2 ac 60 ae 1c 55 4a fe 90 ce 88 b7 cd 5e b6 11   ..`..UJ......^..
+0420  10 a9 95 c6 c5 88 ca e7 34 d3 4e ff 43 bb b6 f8   ........4.N.C...
+0430  5a 7a 23 c0 c2 44 c9 ae 1d 85 a5 73 26 e2 c2 40   Zz#..D.....s&..@
+0440  14 74 f2 12 4c de c7 d4 29 b8 32 7e 6c f6 5a 32   .t..L...).2~l.Z2
+0450  61 b2 fe 7a 5d 03 99 2a c8 54 f1 c6 c7 bf b9 60   a..z]..*.T.....`
+0460  2a c2 b0 7e ca 83 5d 34 51 51 61 5e 96 d3 cc a6   *..~..]4QQa^....
+0470  e4 11 06 17 18 2f 6b 15 7a f6 9b 3e ff 29 33 b5   ...../k.z..>.)3.
+0480  6c 76 ab ec 47 f0 97 5b ef 7e 12 52 cf e2 20 70   lv..G..[.~.R.. p
+0490  c9 60 44 1e fa d0 86 51 50 7d bb 1e 3e e1 1e 8a   .`D....QP}..>...
+04a0  41 96 c7 d7 7f d6 28 c1 6a 01 89 9c 1e ea 7a 3c   A.....(.j.....z<
+    Data […]: 42ba130f17236f5dc9a31e527cbf235342ab487219b1eb6884d9b8fd65b0bf49819b42ad863ab708b99a008d7ec701aa7a3688215538ea42169d6ee3fbc352cabf5463a18113bbac135a6a1e11229ba8102d6a012ee2e9d8a3fb028a0ffd75f30c4ad66f6d0d04133d33bd5e86f373c39e5
+    [Length: 1200]
+
+Frame 3: Packet, 1242 bytes on wire (9936 bits), 1242 bytes captured (9936 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:37.811420300 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:37.811420300 UTC
+    Epoch Arrival Time: 1775744797.811420300
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 1.512194500 seconds]
+    Frame Number: 3
+    Frame Length: 1242 bytes (9936 bits)
+    Capture Length: 1242 bytes (9936 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 18.161.111.37, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 1228
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 246
+    Protocol: UDP (17)
+    Header Checksum: 0xf764 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 18.161.111.37
+    Destination Address: 172.16.90.227
+    [Stream index: 1]
+User Datagram Protocol, Src Port: 443, Dst Port: 56655
+    Source Port: 443
+    Destination Port: 56655
+    Length: 1208
+    Checksum: 0xc2ae [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Stream Packet Number: 2]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (1200 bytes)
+Data (1200 bytes)
+
+0000  5f b4 5e cc e1 ad 5f 15 3d ef d2 dc fd 64 57 84   _.^..._.=....dW.
+0010  18 1d fc 41 96 76 23 8a 20 49 20 ba f3 f7 23 c9   ...A.v#. I ...#.
+0020  a7 62 64 3d 40 62 85 98 73 f8 73 ee 06 ab c2 1b   .bd=@b..s.s.....
+0030  8b 12 5a 67 7c 2b 31 3f e0 38 51 bf f5 45 96 ba   ..Zg|+1?.8Q..E..
+0040  76 76 99 20 84 4c 85 4b 9c 84 32 09 ed 6b 09 98   vv. .L.K..2..k..
+0050  6f 7a 0a 3a 7e 30 a3 70 73 61 dc 21 40 05 98 11   oz.:~0.psa.!@...
+0060  96 08 13 ee 60 08 9f f4 85 9b c6 21 09 74 35 01   ....`......!.t5.
+0070  00 d8 ca ef 2f db 03 a7 14 98 9f 21 d5 e0 52 fa   ..../......!..R.
+0080  e1 04 71 83 e0 fc 9e 0e 86 00 1a 99 0a 58 dd 93   ..q..........X..
+0090  4e 00 a1 5a f9 24 48 3e 5e 06 48 68 e6 e8 94 5a   N..Z.$H>^.Hh...Z
+00a0  95 a4 55 0f 08 2f 34 2b 6a f7 3b cd 0e 04 10 92   ..U../4+j.;.....
+00b0  3c f1 66 37 80 39 20 57 9f 42 28 1a 65 b7 c4 08   <.f7.9 W.B(.e...
+00c0  c8 4d 47 dd e0 45 27 4b 6a e7 78 4f e3 cb b6 cb   .MG..E'Kj.xO....
+00d0  15 bb eb 2f bb 63 f6 a9 4e af 9f 87 92 b5 95 28   .../.c..N......(
+00e0  bd 62 c0 e3 73 e2 01 6a 95 22 72 1e f1 f5 51 11   .b..s..j."r...Q.
+00f0  fd 0b fa 57 0e fd 5f bf 2e 70 98 03 55 9e 25 dc   ...W.._..p..U.%.
+0100  27 fc 2d e4 59 f0 3d 9a 88 0f 55 da d7 bc af 05   '.-.Y.=...U.....
+0110  ec 74 3a ed bc ee 4b 40 cd d6 21 39 f0 50 a8 64   .t:...K@..!9.P.d
+0120  23 5e 0a 6d d5 66 2a 31 e2 ba e8 f5 a8 11 13 2a   #^.m.f*1.......*
+0130  a6 9e 6f a6 2d 7f 9d e7 e8 b0 06 17 68 0c c0 7d   ..o.-.......h..}
+0140  c5 92 42 e2 a7 33 10 3a d5 3e 4a 67 14 3f 8b 45   ..B..3.:.>Jg.?.E
+0150  3f 80 12 04 19 e4 7d b7 9e eb 90 bb c2 fd 2e f0   ?.....}.........
+0160  28 4a b6 33 d2 70 a8 0e ef 57 3e 4b d4 49 9e 1a   (J.3.p...W>K.I..
+0170  9f 08 97 db 81 b6 74 ab e7 db 48 9c 78 f9 87 95   ......t...H.x...
+0180  1a f5 c7 f3 55 5e e8 8c 35 55 05 6f d8 34 04 34   ....U^..5U.o.4.4
+0190  56 32 34 29 47 e3 13 45 64 55 2a 42 95 97 ba b2   V24)G..EdU*B....
+01a0  30 dc 35 dc c7 a9 f0 2c d4 fc 64 3c a5 dd aa fa   0.5....,..d<....
+01b0  d8 4e a8 1c 31 8d 43 4c b8 1e 96 01 2a f7 5b 36   .N..1.CL....*.[6
+01c0  3e 61 75 b8 2b 0e fc 2d 1f d5 48 b5 cf 46 22 01   >au.+..-..H..F".
+01d0  bd 6b 26 5f 6d 43 46 54 b5 52 0d 59 71 f0 0d 1f   .k&_mCFT.R.Yq...
+01e0  80 eb fa 59 65 a5 27 b5 35 91 5e 85 c8 49 05 83   ...Ye.'.5.^..I..
+01f0  09 67 d7 d3 6e 7a 70 0e bc f1 8d 0f b2 d4 17 46   .g..nzp........F
+0200  6b be 21 66 84 77 6f 4f e8 50 64 e8 16 92 b8 0a   k.!f.woO.Pd.....
+0210  e1 c0 fd e2 02 a0 80 2f 75 c0 04 12 78 4d d6 c2   ......./u...xM..
+0220  22 9a 85 a7 35 18 e1 c1 b6 fc 2a 03 18 cc b7 ec   "...5.....*.....
+0230  fe d0 89 eb aa e0 c4 83 66 77 e3 90 0c 3a 71 ad   ........fw...:q.
+0240  35 1b e6 5a ca a4 8b 45 c5 0b 6f ff f8 95 b7 9e   5..Z...E..o.....
+0250  74 70 89 95 78 d5 c1 26 f0 34 76 17 50 9b f9 9f   tp..x..&.4v.P...
+0260  3f d8 32 56 7e 5c a9 fb f8 33 bd 48 7a 7d 3b 9c   ?.2V~\...3.Hz};.
+0270  ca 1e 27 c1 41 14 53 c0 0f 7f 25 43 c0 2c 30 91   ..'.A.S...%C.,0.
+0280  db fc 60 ea e8 cc d4 ec 2e ac ff a0 26 5f 61 16   ..`.........&_a.
+0290  a2 c9 1f a2 de 1c 93 a5 8b 7f 5c 8e f3 92 13 07   ..........\.....
+02a0  5c 70 84 57 b7 ca 2a 16 4f f5 e8 af 9c 85 90 20   \p.W..*.O...... 
+02b0  80 f6 bd 0b 6d 7f fc f2 4a b8 65 12 a5 28 14 6b   ....m...J.e..(.k
+02c0  37 78 2e 76 8d bc f2 9e 1e 1c ed 63 ff 0f 85 c9   7x.v.......c....
+02d0  54 c8 57 d5 aa df 38 e4 f9 db 74 f2 6f 03 a6 21   T.W...8...t.o..!
+02e0  9a e0 ff 4f 85 ff c7 e7 7d 76 27 2d b3 3a e6 1e   ...O....}v'-.:..
+02f0  e9 dc ff 0c 7b 64 8e 27 31 75 58 78 53 17 69 d0   ....{d.'1uXxS.i.
+0300  fe 86 47 73 79 97 08 35 02 31 75 5d 32 ad 58 d8   ..Gsy..5.1u]2.X.
+0310  48 63 c4 44 2b 58 03 e3 13 9d 19 b4 83 6b c9 cd   Hc.D+X.......k..
+0320  03 da 84 e4 a8 93 b9 a3 e9 3a ce f4 0d 80 a2 af   .........:......
+0330  1f fe 82 62 86 c9 19 87 9c 06 51 cc 42 19 b6 33   ...b......Q.B..3
+0340  62 99 a9 37 a1 80 15 8a 23 8d 64 e3 b5 90 85 ec   b..7....#.d.....
+0350  c7 46 a1 0b ac e8 d7 df 8b bd 0f 9f 57 b7 49 2b   .F..........W.I+
+0360  f7 5b 63 e7 59 89 0c 82 15 a1 73 c1 dd 4f 08 40   .[c.Y.....s..O.@
+0370  c4 f7 22 44 b7 6c 44 a7 d2 0f 03 70 ef f0 41 de   .."D.lD....p..A.
+0380  1c fd 54 74 45 53 0d ef 75 6b 54 f3 5c ed 0f 9b   ..TtES..ukT.\...
+0390  eb ac 8e d3 34 f1 6d 5d 97 fe c9 cf 2d 83 47 af   ....4.m]....-.G.
+03a0  bc f6 e2 6b 31 43 6a ac 15 77 08 6c e5 9e e9 29   ...k1Cj..w.l...)
+03b0  41 ff d9 7a 7a 5f 6f 86 6a d4 36 e9 fc 8e 95 88   A..zz_o.j.6.....
+03c0  e0 59 e2 0a 49 b6 c6 dc 33 50 e0 6b b8 e6 1f 58   .Y..I...3P.k...X
+03d0  67 23 82 4b d6 22 e5 5a dd d4 64 0b 01 23 e1 eb   g#.K.".Z..d..#..
+03e0  46 9a 4f a4 39 df 39 bd a3 a6 94 29 04 9a c5 ab   F.O.9.9....)....
+03f0  48 d5 7a 00 09 b9 c6 1d 1f 6b 50 0a 84 dc 02 2b   H.z......kP....+
+0400  12 ab ad ce f6 c5 05 47 04 22 bd bc a2 dd 22 5b   .......G."...."[
+0410  8d 90 ba 10 e0 d1 b8 c8 0e 9c 65 52 21 ed 17 b0   ..........eR!...
+0420  3f 77 33 9a 39 d9 d0 a4 36 bb 78 13 6a 7d d3 51   ?w3.9...6.x.j}.Q
+0430  22 ae 1a 6f 92 13 90 a5 00 65 72 47 2a d3 be 1e   "..o.....erG*...
+0440  12 53 54 de 49 37 a2 de 5e 6b 3b ac b7 df 21 70   .ST.I7..^k;...!p
+0450  10 88 6c c3 21 07 25 57 00 78 b0 76 a6 4c 48 c2   ..l.!.%W.x.v.LH.
+0460  94 7b 2b d8 d9 bb 6b 8a 9e 2a b5 39 a3 c3 1e bc   .{+...k..*.9....
+0470  39 f7 bf b9 02 a5 2c 9a f7 50 52 b2 97 39 ee e5   9.....,..PR..9..
+0480  23 78 0d d2 18 96 8c 5a a8 c4 ca 0c 31 fe db ed   #x.....Z....1...
+0490  e8 2e c1 84 84 60 f9 a8 fa 7b 0b 96 1a 86 8f e9   .....`...{......
+04a0  f2 5f f3 02 7c 19 76 f2 41 28 a1 3c b9 88 62 62   ._..|.v.A(.<..bb
+    Data […]: 5fb45ecce1ad5f153defd2dcfd645784181dfc419676238a204920baf3f723c9a762643d4062859873f873ee06abc21b8b125a677c2b313fe03851bff54596ba76769920844c854b9c843209ed6b09986f7a0a3a7e30a3707361dc2140059811960813ee60089ff4859bc6210974350100d
+    [Length: 1200]
+
+Frame 4: Packet, 1286 bytes on wire (10288 bits), 1286 bytes captured (10288 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.537569000 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.537569000 UTC
+    Epoch Arrival Time: 1775744804.537569000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 6.726148700 seconds]
+    [Time delta from previous displayed frame: 6.726148700 seconds]
+    [Time since reference or first frame: 8.238343200 seconds]
+    Frame Number: 4
+    Frame Length: 1286 bytes (10288 bits)
+    Capture Length: 1286 bytes (10288 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 1272
+    Identification: 0x7a6d (31341)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 49775, Dst Port: 443
+    Source Port: 49775
+    Destination Port: 443
+    Length: 1252
+    Checksum: 0xe624 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (1244 bytes)
+Data (1244 bytes)
+
+0000  4f a8 81 76 d1 34 fb 2b ad 24 76 c2 08 16 0d b7   O..v.4.+.$v.....
+0010  2a e6 3d d3 f2 e3 8f 99 b6 d2 ed 89 16 cd 48 ae   *.=...........H.
+0020  c6 57 7d 31 f2 b8 f8 0c 6e 58 e4 5c 49 7e 10 b6   .W}1....nX.\I~..
+0030  80 a3 f3 5b bc 62 c4 4f 4a f8 d3 8e 07 6f af de   ...[.b.OJ....o..
+0040  b0 06 87 c9 16 bc 03 e3 09 da 1b 25 d4 6e 46 11   ...........%.nF.
+0050  57 20 ee ac 97 76 ce 68 75 6a d8 72 a9 47 57 0f   W ...v.huj.r.GW.
+0060  7b 69 f4 a7 87 2d 4d 21 13 b0 9e bf 3b a8 fb 66   {i...-M!....;..f
+0070  bc 19 1d 67 d1 13 5b e3 54 6b aa 88 a3 6d 29 2e   ...g..[.Tk...m).
+0080  71 4f da 73 81 ad a9 1d 8e 37 fc ad b9 05 b8 63   qO.s.....7.....c
+0090  d4 ec e7 d5 50 37 ad be 90 5c d8 6a ae de f7 bb   ....P7...\.j....
+00a0  16 37 1e d0 12 d5 2e 6b ad 0c 86 fc 2f af 59 3e   .7.....k..../.Y>
+00b0  13 cd fc 0a 87 1a d8 95 7d 95 64 20 f1 cb fc f6   ........}.d ....
+00c0  63 c4 73 0d 2c 3b 75 2d 89 1b fd 15 c0 97 c7 7e   c.s.,;u-.......~
+00d0  5a 5b 55 1d c7 77 b8 aa c5 a8 a4 97 bf 78 28 c4   Z[U..w.......x(.
+00e0  0f 12 4b 7f fe a6 89 70 71 0c 63 8a 26 ec 50 fa   ..K....pq.c.&.P.
+00f0  01 b7 14 a0 85 1a 42 d9 bc 07 95 5f f1 e9 0d 13   ......B...._....
+0100  86 6a 8c 82 ee c3 31 de e1 fb f8 dd 46 da e2 6e   .j....1.....F..n
+0110  9d ba 49 48 1d 76 fc bf 4b a5 bb 98 d6 c5 76 10   ..IH.v..K.....v.
+0120  8b d6 14 d1 7c e1 d4 bf 09 1d f7 9a 96 9a 4f 96   ....|.........O.
+0130  7d 8b c3 9e 57 4f cd 4e df a1 73 4e 6b 9c fb a6   }...WO.N..sNk...
+0140  83 e2 5e 75 43 17 8f da 0b 77 87 05 ed f8 9b 86   ..^uC....w......
+0150  57 56 6f b9 dd 6d f0 37 2d 7f 7f 3d 5c 59 69 a4   WVo..m.7-..=\Yi.
+0160  da af ff 60 29 ed d9 5d 7a b0 b7 85 08 47 ca c2   ...`)..]z....G..
+0170  95 34 e6 7e c2 cd de b3 0d 0f 85 12 a2 ce 6a d1   .4.~..........j.
+0180  f6 5a e4 61 5b 48 d7 10 cf 83 2d d9 7e 37 39 19   .Z.a[H....-.~79.
+0190  6e 25 ef d5 b6 4d 00 27 68 a6 f0 62 1f ad 8f e0   n%...M.'h..b....
+01a0  32 11 02 ca 47 99 97 fa ce 54 78 94 aa 42 76 61   2...G....Tx..Bva
+01b0  5f 16 0b 88 b7 99 29 ac 9e bd 26 5a 57 10 5b 77   _.....)...&ZW.[w
+01c0  64 ce 10 07 c8 05 e9 8e 25 bb 69 f9 c9 6c 22 6a   d.......%.i..l"j
+01d0  45 88 66 5b e0 d2 fd c3 7c 9b e6 c9 e5 46 35 c3   E.f[....|....F5.
+01e0  4b dc e2 19 1f 06 06 85 71 aa 85 06 d1 f4 f8 52   K.......q......R
+01f0  5a f8 8a b0 61 93 e9 c0 c8 a3 1d 22 89 9d 9e 21   Z...a......"...!
+0200  46 95 93 c8 d0 49 16 0b 86 c2 4f 7e 48 c4 e4 a6   F....I....O~H...
+0210  c5 a1 ae 24 95 0e a2 08 89 42 79 61 ce 1d 0d 93   ...$.....Bya....
+0220  cc 92 d9 dd 37 0c 4e c7 97 1a bc 15 70 4a c2 d0   ....7.N.....pJ..
+0230  05 d4 fb 4c 41 97 dd 6f 52 65 95 1e fa b4 a4 64   ...LA..oRe.....d
+0240  f1 e7 3f db 56 26 1b 73 e6 e5 6c 2a 34 df 7d 11   ..?.V&.s..l*4.}.
+0250  a4 b0 9c 67 0b 95 fe 85 c7 56 dd 03 e6 b0 f1 fc   ...g.....V......
+0260  a8 aa 78 10 ee bf b1 2b 79 86 92 a6 ab 44 fc ae   ..x....+y....D..
+0270  d7 47 cd f0 0c 34 11 0c da 32 bd 9a 81 e8 16 06   .G...4...2......
+0280  d9 a3 7c 7a 78 8b 1f be ff 9e 05 e8 e1 dd 06 dd   ..|zx...........
+0290  42 f1 c1 2e 38 0f 4c 5e 4f ad cc 1b 9b 6e 87 f3   B...8.L^O....n..
+02a0  51 1f 34 f2 16 18 b3 67 66 fa 65 0b 65 28 b8 26   Q.4....gf.e.e(.&
+02b0  ad 20 25 1c 35 b5 9d 97 8d 45 d2 38 77 4e e1 f0   . %.5....E.8wN..
+02c0  07 5c 5b 71 46 16 d0 b9 fd 75 74 e3 d3 20 cd b3   .\[qF....ut.. ..
+02d0  e7 d7 16 7e 31 13 fb 24 88 89 b1 30 d9 94 e6 3d   ...~1..$...0...=
+02e0  49 05 7c 56 cf e2 29 46 65 08 60 66 82 cd 8e cc   I.|V..)Fe.`f....
+02f0  ee 8b 9c d6 d8 29 e6 37 02 fb 62 89 d5 e4 ae 1f   .....).7..b.....
+0300  32 c9 54 e8 f9 1d 27 79 71 c8 79 36 9d 8c 83 92   2.T...'yq.y6....
+0310  b2 21 be 4d 43 8e 10 5b 80 6a 7a d7 47 d4 ca 39   .!.MC..[.jz.G..9
+0320  e0 f4 00 bb af aa 03 cb bb 0c ee d6 95 84 b2 bb   ................
+0330  aa c2 8a 51 7b 3c 99 da a1 2c 29 c7 29 43 08 1a   ...Q{<...,).)C..
+0340  0d ca 8b 44 10 94 87 44 16 f1 ac e7 74 9d 4f f2   ...D...D....t.O.
+0350  e3 e3 17 63 9a 0a d2 01 61 5d c2 fb 76 b0 d3 28   ...c....a]..v..(
+0360  11 55 c3 a0 51 48 25 de bd ba 28 90 bb 29 22 8b   .U..QH%...(..)".
+0370  69 58 c6 43 fe 2a e5 16 42 3f 73 eb bf a1 7c 5a   iX.C.*..B?s...|Z
+0380  7a 9b 7f 83 54 4a 9a 0c bb 0e ef e3 30 1f 24 16   z...TJ......0.$.
+0390  d9 da 1a 9a 93 05 ed f0 66 57 03 4c 4e 2e 9c 86   ........fW.LN...
+03a0  0a 4a 77 dc 85 44 fa b4 41 5d 4b 39 e4 78 19 ea   .Jw..D..A]K9.x..
+03b0  a1 52 90 63 3d e1 92 03 d8 08 65 d2 d6 d4 b8 df   .R.c=.....e.....
+03c0  35 9e 4c 97 52 82 99 f6 f5 d6 4c 31 4f b4 66 7a   5.L.R.....L1O.fz
+03d0  cf dc 39 be de cf d6 d0 9c ce 30 3f c1 6b 48 da   ..9.......0?.kH.
+03e0  12 88 f5 69 71 0c 0b 3b 9e 54 33 84 1c 07 fd fe   ...iq..;.T3.....
+03f0  49 c4 ad fb f5 25 36 28 d0 04 ae 28 93 62 66 8f   I....%6(...(.bf.
+0400  f0 85 2e 96 0b 32 42 98 9f d2 9a 3d f5 22 dd ca   .....2B....=."..
+0410  18 ee 2e 1f bf 15 52 a5 1e 8f b0 70 ff 40 59 9e   ......R....p.@Y.
+0420  67 44 d5 6f c0 cd 32 92 bf 67 14 cb 4c eb f8 a6   gD.o..2..g..L...
+0430  c9 6d 98 86 ce 5f 33 84 8f 35 7c 64 d3 95 cf d1   .m..._3..5|d....
+0440  be 3f 6c bb dd 82 85 0a fb 82 48 43 4c 4b b8 cc   .?l.......HCLK..
+0450  5d cb ae 05 ec 1d 23 ad 8f d7 11 55 bd 57 1e ce   ].....#....U.W..
+0460  6c 73 e2 cb b3 6e 3b 74 ba 53 27 39 c3 d3 fa 32   ls...n;t.S'9...2
+0470  61 04 1b 2c a4 7d 06 58 b2 e0 04 f2 cc 59 4e cc   a..,.}.X.....YN.
+0480  bd e4 40 5b cc 3d 50 bf 98 c4 ea 8c 70 73 d3 15   ..@[.=P.....ps..
+0490  18 2d 56 06 b9 ac 62 c0 5a 42 47 31 2c 81 b1 38   .-V...b.ZBG1,..8
+04a0  01 64 93 fc 89 dd 9e d0 3c c0 b8 2f 8b dd 18 fd   .d......<../....
+04b0  c8 ef 1b 8b 02 25 83 ca 08 99 e2 33 bb 94 0b 61   .....%.....3...a
+04c0  73 ab 0a e8 0f 1e f4 5a 22 05 18 a2 ac 15 47 f9   s......Z".....G.
+04d0  e8 dc d0 75 8e 18 2f b8 06 91 48 a9               ...u../...H.
+    Data […]: 4fa88176d134fb2bad2476c208160db72ae63dd3f2e38f99b6d2ed8916cd48aec6577d31f2b8f80c6e58e45c497e10b680a3f35bbc62c44f4af8d38e076fafdeb00687c916bc03e309da1b25d46e46115720eeac9776ce68756ad872a947570f7b69f4a7872d4d2113b09ebf3ba8fb66bc1
+    [Length: 1244]
+
+Frame 5: Packet, 1292 bytes on wire (10336 bits), 1292 bytes captured (10336 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.537611700 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.537611700 UTC
+    Epoch Arrival Time: 1775744804.537611700
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 42.700 microseconds]
+    [Time delta from previous displayed frame: 42.700 microseconds]
+    [Time since reference or first frame: 8.238385900 seconds]
+    Frame Number: 5
+    Frame Length: 1292 bytes (10336 bits)
+    Capture Length: 1292 bytes (10336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 1278
+    Identification: 0x7a6e (31342)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 49775, Dst Port: 443
+    Source Port: 49775
+    Destination Port: 443
+    Length: 1258
+    Checksum: 0xe62a [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 2]
+    [Timestamps]
+        [Time since first frame: 42.700 microseconds]
+        [Time since previous frame: 42.700 microseconds]
+    UDP payload (1250 bytes)
+Data (1250 bytes)
+
+0000  54 a8 81 76 d1 34 fb 2b ad 24 76 c2 08 16 0d b7   T..v.4.+.$v.....
+0010  2a e6 b8 60 e9 e0 f0 9b d7 fa bf 3c f5 e6 75 9e   *..`.......<..u.
+0020  5b 3b 29 d4 20 3f 3a 91 0a b9 ba c1 4c d3 14 a2   [;). ?:.....L...
+0030  9a dc 4b c0 99 9d 6f 8d 3f ec 6c 23 49 96 a7 df   ..K...o.?.l#I...
+0040  fc 16 54 80 94 7e ea bb 33 8d f9 de 4e 78 05 b7   ..T..~..3...Nx..
+0050  ea dc 48 54 df a4 c4 74 f9 8f 99 da 4e 55 e0 6e   ..HT...t....NU.n
+0060  7f cf c0 71 4c 05 f0 cb 0a 4c ec 60 3f a1 b1 52   ...qL....L.`?..R
+0070  3c d2 f2 5a a0 ba 62 7b a7 55 df 9f 7b 72 60 87   <..Z..b{.U..{r`.
+0080  e9 37 ae a9 3e 65 9a f6 0a be 1f 50 ab e6 4a 5d   .7..>e.....P..J]
+0090  83 94 b2 a8 fa 65 d9 29 14 ae ab 17 ce 4b d1 d3   .....e.).....K..
+00a0  12 20 4a d7 18 70 16 d4 f3 5b 64 a4 57 39 92 65   . J..p...[d.W9.e
+00b0  80 5b 08 ce af 3f 3b 17 66 d9 96 0b 7d 84 92 aa   .[...?;.f...}...
+00c0  2a 57 5a 73 39 22 7a d9 ba 74 eb ee e8 b1 a3 5b   *WZs9"z..t.....[
+00d0  fa b1 5e 1c fc 36 f7 76 5e 0f 0c 7c 92 c1 55 2f   ..^..6.v^..|..U/
+00e0  1a ae fa 94 00 6d 7d ad 15 9b cf 97 ef 8a 14 e4   .....m}.........
+00f0  aa 87 be bd 77 16 8d 43 73 97 46 fe 03 38 fb 7b   ....w..Cs.F..8.{
+0100  42 5f 1f 16 85 3f 66 b4 53 7b 7c 5e 69 ed 93 63   B_...?f.S{|^i..c
+0110  0d 7b 68 f4 04 47 00 20 f2 d0 dc 18 83 80 dd e0   .{h..G. ........
+0120  0a 7a 9a b4 66 84 dd 8e 98 02 3c fe 24 79 e2 f2   .z..f.....<.$y..
+0130  ad da f7 8e 1e 93 28 25 27 f3 2f 3c 7a 05 52 a8   ......(%'./<z.R.
+0140  f2 91 bb 41 4a 14 11 f9 06 e6 1f 6a f3 28 92 48   ...AJ......j.(.H
+0150  b9 31 98 65 9b ce b0 0f 52 98 f9 0c c7 dc d6 18   .1.e....R.......
+0160  d9 54 57 35 8c 4d d2 00 e2 12 77 3b c0 78 a5 cf   .TW5.M....w;.x..
+0170  ee 18 14 f0 ba 7d 82 fa f7 3f 7b c5 a6 1b f1 91   .....}...?{.....
+0180  31 32 fc fc 19 db f7 29 e6 1b ef 31 2e fe 20 7c   12.....)...1.. |
+0190  1e f8 e4 b2 29 2b 7c 9d 98 d8 d2 78 b0 fe 8f 66   ....)+|....x...f
+01a0  8b 65 b5 3a 24 9e 00 f2 a9 5d 37 85 e3 63 c4 69   .e.:$....]7..c.i
+01b0  9c c3 ce a9 aa 2c 64 85 16 16 b0 fa c0 16 1f c5   .....,d.........
+01c0  fe 1f 32 b6 aa 12 0b e7 99 b4 6b 91 2b ba 06 1b   ..2.......k.+...
+01d0  d0 c7 ec 20 b9 26 92 29 d4 3f e8 51 c6 fd 58 54   ... .&.).?.Q..XT
+01e0  c5 86 a1 20 3a 17 ed f5 64 3e e2 e4 83 54 d5 f5   ... :...d>...T..
+01f0  d8 9e be f5 08 ef 4d 62 eb ee f1 69 6b 0c 49 3b   ......Mb...ik.I;
+0200  3d 91 e2 74 e1 bf 59 4a 99 d6 e6 86 7b 7e 34 77   =..t..YJ....{~4w
+0210  16 09 f3 c5 9a 0a 33 d4 19 9e 21 fa 14 24 c0 91   ......3...!..$..
+0220  21 90 8c f2 6a 74 db 6a e0 18 71 fb b6 c7 f3 28   !...jt.j..q....(
+0230  18 58 e1 84 6b a5 b6 93 56 33 82 ee ef 81 4a 51   .X..k...V3....JQ
+0240  82 05 3b 1c b8 99 83 32 ae c7 eb ea 52 ab cc 4e   ..;....2....R..N
+0250  b5 da 50 d8 57 69 22 b4 e9 79 a3 32 e7 d3 87 b7   ..P.Wi"..y.2....
+0260  d5 ab fd 3b e7 cc f1 8b 2c 2a 75 49 b8 5d 6e e2   ...;....,*uI.]n.
+0270  7e 77 41 c9 e0 48 57 6e cb 33 3a 2f 11 a4 12 74   ~wA..HWn.3:/...t
+0280  a8 78 ab 55 6e 60 a0 31 2e a3 b0 91 3e 25 f6 bb   .x.Un`.1....>%..
+0290  25 f6 b4 e3 ab 12 3b dd fc b7 af aa 5b bd 30 67   %.....;.....[.0g
+02a0  dc e2 ae 12 06 8e cf 80 5e 90 ae ff b7 60 58 0d   ........^....`X.
+02b0  db ba 8e d1 8e 7c ad d3 5f a3 bb ef b1 0b c0 3e   .....|.._......>
+02c0  ea b5 c3 09 88 08 88 94 b7 dd 37 77 2a 9c b2 9d   ..........7w*...
+02d0  a2 9f e7 66 b8 5a 77 d4 62 44 c6 f4 72 ac cb 48   ...f.Zw.bD..r..H
+02e0  60 b7 1e c3 0e ff db fd 1f ac 53 61 ad 9d c6 c6   `.........Sa....
+02f0  3d 4d 65 06 7c 83 23 18 93 7b e2 df 20 87 8a 17   =Me.|.#..{.. ...
+0300  23 2b 9e 4e 99 99 78 aa d5 44 a2 9e a5 55 dc d0   #+.N..x..D...U..
+0310  66 61 8e 93 24 0f 55 19 03 6a dc 0d b8 27 b9 55   fa..$.U..j...'.U
+0320  c5 f4 56 50 ef bb ec 99 eb 84 7c e2 54 90 ce 6f   ..VP......|.T..o
+0330  12 dd 49 b1 7b 4f 70 55 d5 d4 d3 bc 56 6b d2 c9   ..I.{OpU....Vk..
+0340  53 26 8a 4b 58 f1 a4 a4 b8 dc c5 b1 ed d0 7d 4a   S&.KX.........}J
+0350  e6 11 88 8c a6 c2 20 fa 22 3f 79 ef 7c 1c 08 5c   ...... ."?y.|..\
+0360  f8 84 e0 26 11 2d 51 41 ec 03 5a 28 c1 73 99 78   ...&.-QA..Z(.s.x
+0370  25 66 a8 da 58 77 f9 17 a9 25 b9 53 5c 87 df e5   %f..Xw...%.S\...
+0380  07 5f 0d 41 62 84 d8 42 0b c2 be 9a 10 b7 3a 58   ._.Ab..B......:X
+0390  55 c7 98 6f 29 26 15 6b f4 b0 58 c9 b9 ce 3d 15   U..o)&.k..X...=.
+03a0  09 86 97 01 64 a8 a3 3a d5 c1 0b ab b9 45 b2 f4   ....d..:.....E..
+03b0  d5 07 cb 08 93 d0 f5 a3 97 9f 77 2e af dc c0 07   ..........w.....
+03c0  5f ac 27 0b 90 e0 6c c1 dc fc 00 80 e5 d7 c2 8f   _.'...l.........
+03d0  d8 11 b9 1f ef 4a 97 3f 2b b3 4f 61 37 bc a2 1b   .....J.?+.Oa7...
+03e0  4d d5 ec f0 d2 33 0e db 1f 89 25 59 c7 4d f5 45   M....3....%Y.M.E
+03f0  b2 b1 93 db e3 2c 54 39 a0 f9 37 ae 39 9d 2a 2f   .....,T9..7.9.*/
+0400  e5 61 0b 8c ad db 6f e9 11 58 1a aa e8 af 65 8c   .a....o..X....e.
+0410  bd ca 6f 4b e5 f3 ba f7 9b 6c 25 33 b3 09 90 c3   ..oK.....l%3....
+0420  ed 5f 3a 96 e3 7f d8 cd ef 11 62 52 3b bd 71 43   ._:.......bR;.qC
+0430  e4 73 cb ce f4 dd 7b 7f 98 73 63 ca d0 34 08 f0   .s....{..sc..4..
+0440  9d a6 b5 80 b0 34 20 74 a1 ad 79 7a 7c d2 f8 e0   .....4 t..yz|...
+0450  1a ca 75 23 25 66 9a 5a d9 f4 18 18 4e fa 08 89   ..u#%f.Z....N...
+0460  8b e4 87 91 95 6b 9f 58 ae f9 6a fc cb 6c 52 8c   .....k.X..j..lR.
+0470  a1 60 02 30 65 ea a2 97 6e 7b 66 8e 8f 5d 4d 2c   .`.0e...n{f..]M,
+0480  70 4c de 33 d5 11 ec c3 0b c9 b7 d9 3c 6a 4e f8   pL.3........<jN.
+0490  15 3e dd d0 a2 fa 48 6e 28 9a cf 82 e5 ed b6 97   .>....Hn(.......
+04a0  f7 69 9c 75 35 3e f1 58 ac 07 3d 29 fd 55 ae 22   .i.u5>.X..=).U."
+04b0  e3 68 bc c0 d0 a8 15 2b 43 5c 64 f2 40 6d 62 52   .h.....+C\d.@mbR
+04c0  d8 e1 74 92 0c 3e f5 50 fb e9 12 64 e0 1b 94 c9   ..t..>.P...d....
+04d0  c4 ce ae 69 3f 79 83 55 8f c6 b8 f1 ed f0 da 96   ...i?y.U........
+04e0  bc 67                                             .g
+    Data […]: 54a88176d134fb2bad2476c208160db72ae6b860e9e0f09bd7fabf3cf5e6759e5b3b29d4203f3a910ab9bac14cd314a29adc4bc0999d6f8d3fec6c234996a7dffc165480947eeabb338df9de4e7805b7eadc4854dfa4c474f98f99da4e55e06e7fcfc0714c05f0cb0a4cec603fa1b1523cd
+    [Length: 1250]
+
+Frame 6: Packet, 1292 bytes on wire (10336 bits), 1292 bytes captured (10336 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.537624900 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.537624900 UTC
+    Epoch Arrival Time: 1775744804.537624900
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 13.200 microseconds]
+    [Time delta from previous displayed frame: 13.200 microseconds]
+    [Time since reference or first frame: 8.238399100 seconds]
+    Frame Number: 6
+    Frame Length: 1292 bytes (10336 bits)
+    Capture Length: 1292 bytes (10336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 1278
+    Identification: 0x7a6f (31343)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 49775, Dst Port: 443
+    Source Port: 49775
+    Destination Port: 443
+    Length: 1258
+    Checksum: 0xe62a [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 3]
+    [Timestamps]
+        [Time since first frame: 55.900 microseconds]
+        [Time since previous frame: 13.200 microseconds]
+    UDP payload (1250 bytes)
+Data (1250 bytes)
+
+0000  47 a8 81 76 d1 34 fb 2b ad 24 76 c2 08 16 0d b7   G..v.4.+.$v.....
+0010  2a e6 cc 87 a8 b8 21 0d 0a 2a 31 18 ff 48 a9 88   *.....!..*1..H..
+0020  bf c2 b1 52 bd 45 0e e8 e1 07 e6 0e 87 9c 28 1b   ...R.E........(.
+0030  3c 55 34 e7 a6 a9 cb 3f ec 40 85 00 fa b3 da 64   <U4....?.@.....d
+0040  b9 d8 b5 24 08 00 0e b1 a2 49 39 45 fd 17 e5 4a   ...$.....I9E...J
+0050  9f 1e 5a cd cd 02 e8 4a e4 7e 39 c2 40 60 c0 86   ..Z....J.~9.@`..
+0060  bb c8 4a df cd 30 8a 62 95 9c 66 c7 84 aa 1c 21   ..J..0.b..f....!
+0070  e5 00 3d 23 cb 09 15 02 f0 84 d0 81 de a2 80 50   ..=#...........P
+0080  a9 7a 21 f0 1a 39 0e ad 27 82 c4 72 8e c0 1a 2a   .z!..9..'..r...*
+0090  4b 9c 46 17 38 6b cb 41 ca 80 37 e0 4d 28 c3 c5   K.F.8k.A..7.M(..
+00a0  03 f4 98 cf 62 44 b2 9a 14 d8 3f 98 6f 0d d9 c7   ....bD....?.o...
+00b0  d7 24 3d 10 3d 5c e9 e2 bb af dc 71 e7 50 6f 4b   .$=.=\.....q.PoK
+00c0  a8 11 a7 c8 6e 16 0d f4 db 7a 84 51 d6 99 77 d3   ....n....z.Q..w.
+00d0  83 b3 c3 bf c9 7e e2 1e 6e 3c ad 9b c8 6a 69 51   .....~..n<...jiQ
+00e0  f5 0f 46 50 69 f8 48 b8 28 d0 3d f1 9c 5b 42 92   ..FPi.H.(.=..[B.
+00f0  d1 fc 26 96 84 a4 d5 e3 2e fb cb cf b6 84 9c ce   ..&.............
+0100  60 eb 8b 94 32 cf e6 5f ea 80 92 71 3b 2a 88 2d   `...2.._...q;*.-
+0110  ba 2b 0f 5c 13 af dd 71 cb ae 5e 44 7c 1d 28 2c   .+.\...q..^D|.(,
+0120  bc 01 73 99 c8 e7 29 d3 fa df 0a 99 91 21 45 a1   ..s...)......!E.
+0130  cf b1 75 98 41 8b ae ad 7a dd f7 ac e2 56 a1 29   ..u.A...z....V.)
+0140  8b 71 01 2f f0 0a f8 af 12 f4 0f 56 e0 f4 db 4c   .q./.......V...L
+0150  8f f3 91 a3 e6 eb 81 0e 94 cc dd 8e 00 00 4c 61   ..............La
+0160  62 09 a3 a5 d4 f9 ec ff e8 a9 98 b1 9a e6 d6 22   b.............."
+0170  dc 97 ba 29 20 84 34 b3 e8 18 d3 08 01 fe 66 ac   ...) .4.......f.
+0180  fc d2 c4 d9 5c 77 2f 8d e7 3b c1 14 20 9e 25 2f   ....\w/..;.. .%/
+0190  2a 18 87 02 11 8b 38 b9 08 72 04 d2 02 dc bc 94   *.....8..r......
+01a0  ed 0d ab 4b 22 56 f0 5d 97 a3 90 17 d9 a6 df 3a   ...K"V.].......:
+01b0  44 c4 03 dc 97 44 43 07 62 92 79 e8 e2 dc 53 a4   D....DC.b.y...S.
+01c0  62 55 19 44 cc 94 14 4c 7f 5c 47 66 5e 6a b6 27   bU.D...L.\Gf^j.'
+01d0  5a e7 ec c3 4c 4a 52 f5 b9 4f 56 cc 5c 1b 5a e8   Z...LJR..OV.\.Z.
+01e0  ca 46 6f 36 2e 41 40 ec 61 29 b4 2e 96 97 41 15   .Fo6.A@.a)....A.
+01f0  a9 49 14 7b b1 db 5a b3 8b 0d e3 a1 00 5c 1e 36   .I.{..Z......\.6
+0200  5f c8 6c bb 8f 7d 33 91 77 f7 1a 8d 80 1b a1 3f   _.l..}3.w......?
+0210  13 a7 8e aa 0f 89 5a 07 da 35 d4 ff 45 64 bb c4   ......Z..5..Ed..
+0220  61 2d 90 4e 59 5e 9e be e9 35 40 21 88 26 d8 95   a-.NY^...5@!.&..
+0230  04 b1 10 88 13 b8 e7 2c 4d ec 3d d4 ef 39 6d c0   .......,M.=..9m.
+0240  16 bb df f6 83 a7 8d 1a 76 d0 b7 f6 ca 7a a5 03   ........v....z..
+0250  9e 09 5f 30 0d 69 d0 af c1 ee 14 d4 60 e7 17 a2   .._0.i......`...
+0260  19 a8 cc 9f d8 dc e8 58 7e 81 9c c4 be 58 6f 8f   .......X~....Xo.
+0270  fb 37 1d ca f3 05 53 a5 b0 5b 42 0b 9e 46 da 5b   .7....S..[B..F.[
+0280  dc 6c 54 e4 37 f6 38 cc 6c 59 be 3a 64 79 c6 4f   .lT.7.8.lY.:dy.O
+0290  af ff c9 2f cc a6 3b ee 96 b8 82 a7 ec 9a 4f df   .../..;.......O.
+02a0  f4 16 2e 16 9b fa 60 e8 d5 98 6a a2 25 c2 da 28   ......`...j.%..(
+02b0  60 c7 11 54 68 56 92 99 59 99 49 0a a9 8c 45 4e   `..ThV..Y.I...EN
+02c0  be 22 8b 4d 10 b4 a4 2e 13 e4 a3 6d 50 d1 35 ae   .".M.......mP.5.
+02d0  8b 34 48 91 b8 58 44 e2 07 a0 f6 06 6c b7 e3 93   .4H..XD.....l...
+02e0  d6 85 d2 e6 0a c1 b0 76 21 0c ce 05 69 f7 78 64   .......v!...i.xd
+02f0  e4 c4 95 9f f2 35 19 eb 43 1c 6a ef 58 37 1a 4b   .....5..C.j.X7.K
+0300  8f 46 c9 6a 02 33 2d 72 4e e0 dc 4d 9e 63 db d8   .F.j.3-rN..M.c..
+0310  2b d6 42 9a 56 93 08 e8 5e a9 76 7b d2 ee 47 45   +.B.V...^.v{..GE
+0320  5e c5 a9 f0 94 5a bf e6 f0 50 35 8c 7d 5b 07 4a   ^....Z...P5.}[.J
+0330  d8 22 d3 24 c2 29 0d 6d b9 cd ec cb a0 01 5a d3   .".$.).m......Z.
+0340  3f 5c d2 ac 4b e2 80 20 e4 17 ad 60 9c 4a fa ec   ?\..K.. ...`.J..
+0350  cc f8 ff aa c4 53 b4 3e f5 2d fc 3f 55 35 94 cf   .....S.>.-.?U5..
+0360  b8 4a 7d e2 d0 10 84 d2 d6 35 30 28 8a 9e d1 95   .J}......50(....
+0370  9a 50 87 ce 51 fb 75 3a 55 6f c3 32 06 96 2f 4e   .P..Q.u:Uo.2../N
+0380  54 27 bc ee bd 69 92 3d bf 3e e4 68 00 bb 28 52   T'...i.=.>.h..(R
+0390  3b fd ff ea 51 16 31 f4 bf 85 2b 55 a3 fe ad 41   ;...Q.1...+U...A
+03a0  b7 f1 b7 e0 d6 f0 81 df ee dc 9a dd 7e 14 56 a1   ............~.V.
+03b0  83 64 d9 d2 f6 bb ae c1 ca 8b b6 0f 6c 5c 97 bb   .d..........l\..
+03c0  ca 94 9a 40 1a 0e ea 5e 76 2b 85 0b 4e 98 3d 3a   ...@...^v+..N.=:
+03d0  be 90 e1 1a d9 7d 43 47 2a f8 a9 11 8a a4 6c ba   .....}CG*.....l.
+03e0  3f 5d 9b e3 63 47 ea b1 25 45 85 17 0a 9a a2 f1   ?]..cG..%E......
+03f0  00 29 b5 35 9e c2 b9 cc 9f a3 19 65 6b 32 0d dd   .).5.......ek2..
+0400  fb 6f 03 90 e3 31 c5 07 88 08 86 7a a6 fa 52 45   .o...1.....z..RE
+0410  38 0c ce 96 57 e3 45 29 f4 b0 a3 73 5f fe 17 0e   8...W.E)...s_...
+0420  17 78 22 90 dc 84 82 cb 65 94 e0 c2 8a e2 4a c2   .x".....e.....J.
+0430  b0 ae 41 a2 41 11 a6 4c 03 29 e5 ef f6 97 9c fe   ..A.A..L.)......
+0440  ea 31 da 21 41 69 58 d2 0e ad ad f4 fc b3 9c b5   .1.!AiX.........
+0450  04 fa 39 d4 10 17 ef cf 87 2a 73 83 62 fa 52 31   ..9......*s.b.R1
+0460  d7 d0 09 9c 4f 76 29 e1 d5 71 4c 01 25 6b dc 30   ....Ov)..qL.%k.0
+0470  38 98 4f 22 f5 4f 4c 32 5a 37 c7 6b d3 eb 48 67   8.O".OL2Z7.k..Hg
+0480  3e 69 8f 8b 4e e8 8f 27 7e 5a 48 f1 36 7b 45 0b   >i..N..'~ZH.6{E.
+0490  41 a4 83 78 9f f8 c9 51 b1 b1 69 a7 2a 95 36 5c   A..x...Q..i.*.6\
+04a0  3d b2 48 7a 0c 7e eb 58 cd 82 d9 0e c3 30 e0 45   =.Hz.~.X.....0.E
+04b0  5b 0e 9d ea 6e b5 ab a3 e6 92 ea 77 05 f5 18 20   [...n......w... 
+04c0  9c 3d b0 56 02 70 54 bb 99 6d d2 67 61 70 7d a5   .=.V.pT..m.gap}.
+04d0  56 38 a6 27 cf ac 22 44 e4 46 a6 25 da 0a f2 37   V8.'.."D.F.%...7
+04e0  88 ed                                             ..
+    Data […]: 47a88176d134fb2bad2476c208160db72ae6cc87a8b8210d0a2a3118ff48a988bfc2b152bd450ee8e107e60e879c281b3c5534e7a6a9cb3fec408500fab3da64b9d8b52408000eb1a2493945fd17e54a9f1e5acdcd02e84ae47e39c24060c086bbc84adfcd308a62959c66c784aa1c21e50
+    [Length: 1250]
+
+Frame 7: Packet, 322 bytes on wire (2576 bits), 322 bytes captured (2576 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.537637600 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.537637600 UTC
+    Epoch Arrival Time: 1775744804.537637600
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 12.700 microseconds]
+    [Time delta from previous displayed frame: 12.700 microseconds]
+    [Time since reference or first frame: 8.238411800 seconds]
+    Frame Number: 7
+    Frame Length: 322 bytes (2576 bits)
+    Capture Length: 322 bytes (2576 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 308
+    Identification: 0x7a70 (31344)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 49775, Dst Port: 443
+    Source Port: 49775
+    Destination Port: 443
+    Length: 288
+    Checksum: 0xe260 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 4]
+    [Timestamps]
+        [Time since first frame: 68.600 microseconds]
+        [Time since previous frame: 12.700 microseconds]
+    UDP payload (280 bytes)
+Data (280 bytes)
+
+0000  53 a8 81 76 d1 34 fb 2b ad 24 76 c2 08 16 0d b7   S..v.4.+.$v.....
+0010  2a e6 7e 44 29 ce 1b eb 7b 5a e6 36 81 e2 60 70   *.~D)...{Z.6..`p
+0020  fc 68 b8 ee d0 f6 62 48 70 43 fd fb 9a be f1 2d   .h....bHpC.....-
+0030  b5 ae cd 1a 61 a4 9c bf 07 b1 6b a9 11 5b 1f 6a   ....a.....k..[.j
+0040  bd f8 14 56 10 dd ef c4 fd 8f cf 66 e5 4a 2b 80   ...V.......f.J+.
+0050  62 91 b9 88 59 c7 60 b7 3a 9e 09 8a 30 58 60 c6   b...Y.`.:...0X`.
+0060  ac ec 15 bc a1 6e 51 61 7a 07 9e 05 39 97 f9 8e   .....nQaz...9...
+0070  02 87 de 2b f3 30 dd 5f b8 6e f9 6b 6f a0 04 28   ...+.0._.n.ko..(
+0080  23 76 3b f2 41 83 88 2b 1b 2f 2b 7b dd 97 b7 90   #v;.A..+./+{....
+0090  02 d7 1a 53 02 b2 dd b0 94 62 5b 52 05 26 d9 e3   ...S.....b[R.&..
+00a0  94 71 44 da fe 6e 83 d1 17 10 cc 4e aa 3e bf 07   .qD..n.....N.>..
+00b0  81 45 13 59 cd e7 8e f8 28 85 ba d4 4c 93 18 a2   .E.Y....(...L...
+00c0  b1 2f 35 19 98 30 12 26 24 53 f1 46 5f 6a 24 31   ./5..0.&$S.F_j$1
+00d0  a2 ce d2 6e 5f 47 86 24 9a 7f 13 d7 51 1d be 48   ...n_G.$....Q..H
+00e0  5c b0 51 ff 32 84 32 8a 8a c7 b4 5c ad 7c 92 c3   \.Q.2.2....\.|..
+00f0  54 2d 2e a7 49 b3 07 12 b5 df 22 1c af 76 80 03   T-..I....."..v..
+0100  ae b9 8d 54 f0 b3 6f 0a 41 2e e4 91 ee 5a 0c c0   ...T..o.A....Z..
+0110  f9 38 02 1d 63 58 a8 e8                           .8..cX..
+    Data […]: 53a88176d134fb2bad2476c208160db72ae67e4429ce1beb7b5ae63681e26070fc68b8eed0f662487043fdfb9abef12db5aecd1a61a49cbf07b16ba9115b1f6abdf8145610ddefc4fd8fcf66e54a2b806291b98859c760b73a9e098a305860c6acec15bca16e51617a079e053997f98e028
+    [Length: 280]
+
+Frame 8: Packet, 76 bytes on wire (608 bits), 76 bytes captured (608 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.550746700 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.550746700 UTC
+    Epoch Arrival Time: 1775744804.550746700
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 13.109100 milliseconds]
+    [Time delta from previous displayed frame: 13.109100 milliseconds]
+    [Time since reference or first frame: 8.251520900 seconds]
+    Frame Number: 8
+    Frame Length: 76 bytes (608 bits)
+    Capture Length: 76 bytes (608 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: 802.1Q Virtual LAN (0x8100)
+    [Stream index: 0]
+802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 0
+    000. .... .... .... = Priority: Best Effort (default) (0)
+    ...0 .... .... .... = DEI: Ineligible
+    .... 0000 0000 0000 = ID: 0
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 151.101.66.214, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 58
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 57
+    Protocol: UDP (17)
+    Header Checksum: 0x6084 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 151.101.66.214
+    Destination Address: 172.16.90.227
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 443, Dst Port: 49775
+    Source Port: 443
+    Destination Port: 49775
+    Length: 38
+    Checksum: 0x829a [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 5]
+    [Timestamps]
+        [Time since first frame: 13.177700 milliseconds]
+        [Time since previous frame: 13.109100 milliseconds]
+    UDP payload (30 bytes)
+Data (30 bytes)
+
+0000  46 bf 6b 9d c5 24 e2 cf 43 1c 32 fd 19 92 82 53   F.k..$..C.2....S
+0010  bb 6a 2f e8 35 3e e9 f8 88 58 3c 96 9b e4         .j/.5>...X<...
+    Data: 46bf6b9dc524e2cf431c32fd19928253bb6a2fe8353ee9f888583c969be4
+    [Length: 30]
+
+Frame 9: Packet, 82 bytes on wire (656 bits), 82 bytes captured (656 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.550840400 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.550840400 UTC
+    Epoch Arrival Time: 1775744804.550840400
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 93.700 microseconds]
+    [Time delta from previous displayed frame: 93.700 microseconds]
+    [Time since reference or first frame: 8.251614600 seconds]
+    Frame Number: 9
+    Frame Length: 82 bytes (656 bits)
+    Capture Length: 82 bytes (656 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 68
+    Identification: 0x7a71 (31345)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 49775, Dst Port: 443
+    Source Port: 49775
+    Destination Port: 443
+    Length: 48
+    Checksum: 0xe170 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 6]
+    [Timestamps]
+        [Time since first frame: 13.271400 milliseconds]
+        [Time since previous frame: 93.700 microseconds]
+    UDP payload (40 bytes)
+Data (40 bytes)
+
+0000  4c a8 81 76 d1 34 fb 2b ad 24 76 c2 08 16 0d b7   L..v.4.+.$v.....
+0010  2a e6 86 99 f1 8c 1c e5 d2 9e 10 e1 44 bd 31 c6   *...........D.1.
+0020  4a e3 fe 60 ed 81 c3 ed                           J..`....
+    Data: 4ca88176d134fb2bad2476c208160db72ae68699f18c1ce5d29e10e144bd31c64ae3fe60ed81c3ed
+    [Length: 40]
+
+Frame 10: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.550936700 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.550936700 UTC
+    Epoch Arrival Time: 1775744804.550936700
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 96.300 microseconds]
+    [Time delta from previous displayed frame: 96.300 microseconds]
+    [Time since reference or first frame: 8.251710900 seconds]
+    Frame Number: 10
+    Frame Length: 70 bytes (560 bits)
+    Capture Length: 70 bytes (560 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: 802.1Q Virtual LAN (0x8100)
+    [Stream index: 0]
+802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 0
+    000. .... .... .... = Priority: Best Effort (default) (0)
+    ...0 .... .... .... = DEI: Ineligible
+    .... 0000 0000 0000 = ID: 0
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 151.101.66.214, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 52
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 57
+    Protocol: UDP (17)
+    Header Checksum: 0x608a [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 151.101.66.214
+    Destination Address: 172.16.90.227
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 443, Dst Port: 49775
+    Source Port: 443
+    Destination Port: 49775
+    Length: 32
+    Checksum: 0xe6b1 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 7]
+    [Timestamps]
+        [Time since first frame: 13.367700 milliseconds]
+        [Time since previous frame: 96.300 microseconds]
+    UDP payload (24 bytes)
+Data (24 bytes)
+
+0000  40 26 1f 4e 7b 61 89 cd 24 1b 84 7e d4 5d e2 54   @&.N{a..$..~.].T
+0010  30 a7 86 52 c5 fb 32 bd                           0..R..2.
+    Data: 40261f4e7b6189cd241b847ed45de25430a78652c5fb32bd
+    [Length: 24]
+
+Frame 11: Packet, 367 bytes on wire (2936 bits), 367 bytes captured (2936 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.809353600 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.809353600 UTC
+    Epoch Arrival Time: 1775744804.809353600
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 258.416900 milliseconds]
+    [Time delta from previous displayed frame: 258.416900 milliseconds]
+    [Time since reference or first frame: 8.510127800 seconds]
+    Frame Number: 11
+    Frame Length: 367 bytes (2936 bits)
+    Capture Length: 367 bytes (2936 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: 802.1Q Virtual LAN (0x8100)
+    [Stream index: 0]
+802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 0
+    000. .... .... .... = Priority: Best Effort (default) (0)
+    ...0 .... .... .... = DEI: Ineligible
+    .... 0000 0000 0000 = ID: 0
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 151.101.66.214, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 349
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 57
+    Protocol: UDP (17)
+    Header Checksum: 0x5f61 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 151.101.66.214
+    Destination Address: 172.16.90.227
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 443, Dst Port: 49775
+    Source Port: 443
+    Destination Port: 49775
+    Length: 329
+    Checksum: 0x0235 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 8]
+    [Timestamps]
+        [Time since first frame: 271.784600 milliseconds]
+        [Time since previous frame: 258.416900 milliseconds]
+    UDP payload (321 bytes)
+Data (321 bytes)
+
+0000  52 62 c9 41 88 12 c6 84 e2 a9 0b 63 96 e2 c4 e6   Rb.A.......c....
+0010  9f 89 2b 39 84 69 f0 b8 b2 04 bc b3 d6 35 35 31   ..+9.i.......551
+0020  b1 c4 5a 8d 25 86 5a d9 ad a9 54 1b b5 71 f3 d2   ..Z.%.Z...T..q..
+0030  ae 87 67 62 43 0f 20 89 b1 0f c3 11 44 2f 02 01   ..gbC. .....D/..
+0040  82 01 46 44 09 91 c8 d5 fc 04 79 f5 4e ce 87 7d   ..FD......y.N..}
+0050  ff 9a 9d a1 43 51 31 95 15 fe 52 c3 f1 e4 c9 f1   ....CQ1...R.....
+0060  0b b3 cc 91 b1 ea b7 97 90 47 71 6b 53 e7 5d fc   .........GqkS.].
+0070  09 78 68 2a 5b 94 fe 0f 77 3f bb 5f b0 56 20 6c   .xh*[...w?._.V l
+0080  6f ca bf c9 c5 5b e8 04 5b 50 2b ef 14 34 d5 22   o....[..[P+..4."
+0090  85 e6 75 5e 91 1b 98 46 14 dc 3b cb 6b 93 0e fd   ..u^...F..;.k...
+00a0  4f e6 c9 b1 44 e2 0f 14 08 02 51 11 3a 16 0b 7e   O...D.....Q.:..~
+00b0  ad ac 30 c6 65 a9 7f 84 59 e9 65 42 d0 14 8a 96   ..0.e...Y.eB....
+00c0  f4 69 18 72 05 8d 3c 29 bd 8b ba 4e bd 4d 00 01   .i.r..<)...N.M..
+00d0  38 66 00 ae 81 ec e4 14 93 3b 52 db 33 62 d1 d6   8f.......;R.3b..
+00e0  db c9 b4 9f 10 dc 33 9a 42 a8 03 71 81 2a fc 4c   ......3.B..q.*.L
+00f0  9a 76 6c 3d a1 e7 0f de 9d 1c c1 bd a9 56 1d bf   .vl=.........V..
+0100  14 52 f3 c9 ca 61 17 3d 82 ef 00 9e 4b 40 3e 0f   .R...a.=....K@>.
+0110  b5 f5 b1 b7 b1 f1 8f 92 99 cd 57 70 ee f3 b8 a3   ..........Wp....
+0120  ca b8 e0 c6 ca cd 49 8a b1 9f 4c 45 37 f4 6c 04   ......I...LE7.l.
+0130  8e d1 92 4b ea 4e a1 ec 97 87 62 c4 76 ae 95 b6   ...K.N....b.v...
+0140  a0                                                .
+    Data […]: 5262c9418812c684e2a90b6396e2c4e69f892b398469f0b8b204bcb3d6353531b1c45a8d25865ad9ada9541bb571f3d2ae876762430f2089b10fc311442f0201820146440991c8d5fc0479f54ece877dff9a9da14351319515fe52c3f1e4c9f10bb3cc91b1eab7979047716b53e75dfc097
+    [Length: 321]
+
+Frame 12: Packet, 82 bytes on wire (656 bits), 82 bytes captured (656 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:56:44.809471500 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:26:44.809471500 UTC
+    Epoch Arrival Time: 1775744804.809471500
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 117.900 microseconds]
+    [Time delta from previous displayed frame: 117.900 microseconds]
+    [Time since reference or first frame: 8.510245700 seconds]
+    Frame Number: 12
+    Frame Length: 82 bytes (656 bits)
+    Capture Length: 82 bytes (656 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:data]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 68
+    Identification: 0x7a72 (31346)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 2]
+User Datagram Protocol, Src Port: 49775, Dst Port: 443
+    Source Port: 49775
+    Destination Port: 443
+    Length: 48
+    Checksum: 0xe170 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 2]
+    [Stream Packet Number: 9]
+    [Timestamps]
+        [Time since first frame: 271.902500 milliseconds]
+        [Time since previous frame: 117.900 microseconds]
+    UDP payload (40 bytes)
+Data (40 bytes)
+
+0000  59 a8 81 76 d1 34 fb 2b ad 24 76 c2 08 16 0d b7   Y..v.4.+.$v.....
+0010  2a e6 25 07 1d da e7 4f 34 dc a3 86 a8 25 d3 17   *.%....O4....%..
+0020  7f b9 d2 d3 2e da 39 47                           ......9G
+    Data: 59a88176d134fb2bad2476c208160db72ae625071ddae74f34dca386a825d3177fb9d2d32eda3947
+    [Length: 40]
+

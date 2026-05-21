@@ -1,0 +1,1045 @@
+Frame 1: Packet, 1292 bytes on wire (10336 bits), 1292 bytes captured (10336 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:32:26.666783200 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:02:26.666783200 UTC
+    Epoch Arrival Time: 1775743346.666783200
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 1292 bytes (10336 bits)
+    Capture Length: 1292 bytes (10336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:quic:tls]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 1278
+    Identification: 0x7432 (29746)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 58477, Dst Port: 443
+    Source Port: 58477
+    Destination Port: 443
+    Length: 1258
+    Checksum: 0xe62a [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (1250 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 1250]
+    1... .... = Header Form: Long Header (1)
+    .1.. .... = Fixed Bit: True
+    ..00 .... = Packet Type: Initial (0)
+    [.... 00.. = Reserved: 0]
+    [.... ..00 = Packet Number Length: 1 bytes (0)]
+    Version: 1 (0x00000001)
+    Destination Connection ID Length: 8
+    Destination Connection ID: 142696ebf57f8983
+    Source Connection ID Length: 0
+    Token Length: 0
+    Length: 1232
+    [Packet Number: 1]
+    Payload […]: 98c75a8f207a1c0e73d8892663b778c5f954526f0572a701cfd571d8b367e73be0fc96488034223edb81b2f491f93c4fb3641e16ff213c8a12e99c67ea935cb4f0a3f701092c4eb91a71ccf24f5e9015fc3e205bb6ba98ab6cefc84733c8547d756fd9d593b55e4b7e48767b7ceb15c4
+    PADDING Length: 2
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 2]
+    PING
+        Frame Type: PING (0x0000000000000001)
+    PING
+        Frame Type: PING (0x0000000000000001)
+    PADDING Length: 202
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 202]
+    PING
+        Frame Type: PING (0x0000000000000001)
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 0
+        Length: 48
+        Crypto Data
+        TLSv1.3 Record Layer: Handshake Protocol: Client Hello (fragment)
+            Handshake Protocol: Client Hello (fragment)
+    PING
+        Frame Type: PING (0x0000000000000001)
+    PING
+        Frame Type: PING (0x0000000000000001)
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1694
+        Length: 30
+        Crypto Data
+    PADDING Length: 4
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 4]
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1724
+        Length: 25
+        Crypto Data
+    PADDING Length: 2
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 2]
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1035
+        Length: 659
+        Crypto Data
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 48
+        Length: 10
+        Crypto Data
+    PING
+        Frame Type: PING (0x0000000000000001)
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1749
+        Length: 200
+        Crypto Data
+    PADDING Length: 3
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 3]
+
+Frame 2: Packet, 1292 bytes on wire (10336 bits), 1292 bytes captured (10336 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:32:26.666848900 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:02:26.666848900 UTC
+    Epoch Arrival Time: 1775743346.666848900
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 65.700 microseconds]
+    [Time delta from previous displayed frame: 65.700 microseconds]
+    [Time since reference or first frame: 65.700 microseconds]
+    Frame Number: 2
+    Frame Length: 1292 bytes (10336 bits)
+    Capture Length: 1292 bytes (10336 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:quic:tls]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 1278
+    Identification: 0x7433 (29747)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 58477, Dst Port: 443
+    Source Port: 58477
+    Destination Port: 443
+    Length: 1258
+    Checksum: 0xe62a [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 2]
+    [Timestamps]
+        [Time since first frame: 65.700 microseconds]
+        [Time since previous frame: 65.700 microseconds]
+    UDP payload (1250 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 1250]
+    1... .... = Header Form: Long Header (1)
+    .1.. .... = Fixed Bit: True
+    ..00 .... = Packet Type: Initial (0)
+    [.... 00.. = Reserved: 0]
+    [.... ..01 = Packet Number Length: 2 bytes (1)]
+    Version: 1 (0x00000001)
+    Destination Connection ID Length: 8
+    Destination Connection ID: 142696ebf57f8983
+    Source Connection ID Length: 0
+    Token Length: 0
+    Length: 1232
+    [Packet Number: 2]
+    Payload […]: f79ae84da2e83905aecfd29954cd9789f3fad1ad4900338cc102f4cb56bd3b563787afda9d72fd09589a01903c330248920f2467f78ecea0c769ebdbec47f59c1ef0a24f9429256f8f2dad12c03211fadc7ad82216f63004341e20cf15206b1dd4ba99103728e8a04f8888b320a38d73
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1026
+        Length: 9
+        Crypto Data
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 328
+        Length: 681
+        Crypto Data
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1012
+        Length: 4
+        Crypto Data
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1020
+        Length: 6
+        Crypto Data
+    PING
+        Frame Type: PING (0x0000000000000001)
+    PING
+        Frame Type: PING (0x0000000000000001)
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1018
+        Length: 2
+        Crypto Data
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 58
+        Length: 270
+        Crypto Data
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1016
+        Length: 2
+        Crypto Data
+    PADDING Length: 165
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 165]
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 1009
+        Length: 3
+        Crypto Data
+        [13 Reassembled QUIC CRYPTO Data Fragments (1901 bytes): #1(10), #2(270), #2(681), #2(3), #2(4), #2(2), #2(2), #2(6), #2(9), #1(659), #1(30), #1(25), #1(200)]
+            [Frame: 1, payload: 0-9 (10 bytes)]
+            [Frame: 2, payload: 10-279 (270 bytes)]
+            [Frame: 2, payload: 280-960 (681 bytes)]
+            [Frame: 2, payload: 961-963 (3 bytes)]
+            [Frame: 2, payload: 964-967 (4 bytes)]
+            [Frame: 2, payload: 968-969 (2 bytes)]
+            [Frame: 2, payload: 970-971 (2 bytes)]
+            [Frame: 2, payload: 972-977 (6 bytes)]
+            [Frame: 2, payload: 978-986 (9 bytes)]
+            [Frame: 1, payload: 987-1645 (659 bytes)]
+            [Frame: 1, payload: 1646-1675 (30 bytes)]
+            [Frame: 1, payload: 1676-1700 (25 bytes)]
+            [Frame: 1, payload: 1701-1900 (200 bytes)]
+            [Fragment count: 13]
+        TLSv1.3 Record Layer: Handshake Protocol: Client Hello
+            Handshake Protocol: Client Hello (last fragment)
+            [2 Reassembled Handshake Fragments (1949 bytes): #1(48), #2(1901)]
+                [Frame: 1, payload: 0-47 (48 bytes)]
+                [Frame: 2, payload: 48-1948 (1901 bytes)]
+                [Handshake Fragment count: 2]
+            Handshake Protocol: Client Hello
+                Handshake Type: Client Hello (1)
+                Length: 1945
+                Version: TLS 1.2 (0x0303)
+                    [Expert Info (Chat/Deprecated): This legacy_version field MUST be ignored. The supported_versions extension is present and MUST be used instead.]
+                        [This legacy_version field MUST be ignored. The supported_versions extension is present and MUST be used instead.]
+                        [Severity level: Chat]
+                        [Group: Deprecated]
+                Random: 5651ae21a558fcaab28ef6e39fb5b5c86edb4f30de8703fc79ef043eb8f645c9
+                Session ID Length: 0
+                Cipher Suites Length: 6
+                Cipher Suites (3 suites)
+                    Cipher Suite: TLS_AES_128_GCM_SHA256 (0x1301)
+                    Cipher Suite: TLS_AES_256_GCM_SHA384 (0x1302)
+                    Cipher Suite: TLS_CHACHA20_POLY1305_SHA256 (0x1303)
+                Compression Methods Length: 1
+                Compression Methods (1 method)
+                    Compression Method: null (0)
+                Extensions Length: 1898
+                Extension: compress_certificate (len=3)
+                    Type: compress_certificate (27)
+                    Length: 3
+                    Algorithms Length: 2
+                    Algorithm: brotli (2)
+                Extension: supported_versions (len=3) TLS 1.3
+                    Type: supported_versions (43)
+                    Length: 3
+                    Supported Versions length: 2
+                    Supported Version: TLS 1.3 (0x0304)
+                Extension: psk_key_exchange_modes (len=2)
+                    Type: psk_key_exchange_modes (45)
+                    Length: 2
+                    PSK Key Exchange Modes Length: 1
+                    PSK Key Exchange Mode: PSK with (EC)DHE key establishment (psk_dhe_ke) (1)
+                Extension: server_name (len=18) name=gql.twitch.tv
+                    Type: server_name (0)
+                    Length: 18
+                    Server Name Indication extension
+                        Server Name list length: 16
+                        Server Name Type: host_name (0)
+                        Server Name length: 13
+                        Server Name: gql.twitch.tv
+                Extension: supported_groups (len=10)
+                    Type: supported_groups (10)
+                    Length: 10
+                    Supported Groups List Length: 8
+                    Supported Groups (4 groups)
+                        Supported Group: X25519MLKEM768 (0x11ec)
+                        Supported Group: x25519 (0x001d)
+                        Supported Group: secp256r1 (0x0017)
+                        Supported Group: secp384r1 (0x0018)
+                Extension: signature_algorithms (len=20)
+                    Type: signature_algorithms (13)
+                    Length: 20
+                    Signature Hash Algorithms Length: 18
+                    Signature Hash Algorithms (9 algorithms)
+                        Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                            Signature Hash Algorithm Hash: SHA256 (4)
+                            Signature Hash Algorithm Signature: ECDSA (3)
+                        Signature Algorithm: rsa_pss_rsae_sha256 (0x0804)
+                            Signature Hash Algorithm Hash: Unknown (8)
+                            Signature Hash Algorithm Signature: Unknown (4)
+                        Signature Algorithm: rsa_pkcs1_sha256 (0x0401)
+                            Signature Hash Algorithm Hash: SHA256 (4)
+                            Signature Hash Algorithm Signature: RSA (1)
+                        Signature Algorithm: ecdsa_secp384r1_sha384 (0x0503)
+                            Signature Hash Algorithm Hash: SHA384 (5)
+                            Signature Hash Algorithm Signature: ECDSA (3)
+                        Signature Algorithm: rsa_pss_rsae_sha384 (0x0805)
+                            Signature Hash Algorithm Hash: Unknown (8)
+                            Signature Hash Algorithm Signature: Unknown (5)
+                        Signature Algorithm: rsa_pkcs1_sha384 (0x0501)
+                            Signature Hash Algorithm Hash: SHA384 (5)
+                            Signature Hash Algorithm Signature: RSA (1)
+                        Signature Algorithm: rsa_pss_rsae_sha512 (0x0806)
+                            Signature Hash Algorithm Hash: Unknown (8)
+                            Signature Hash Algorithm Signature: Unknown (6)
+                        Signature Algorithm: rsa_pkcs1_sha512 (0x0601)
+                            Signature Hash Algorithm Hash: SHA512 (6)
+                            Signature Hash Algorithm Signature: RSA (1)
+                        Signature Algorithm: rsa_pkcs1_sha1 (0x0201)
+                            Signature Hash Algorithm Hash: SHA1 (2)
+                            Signature Hash Algorithm Signature: RSA (1)
+                Extension: encrypted_client_hello (len=186)
+                    Type: encrypted_client_hello (65037)
+                    Length: 186
+                    Client Hello type: Outer Client Hello (0)
+                    Cipher Suite: HKDF-SHA256/AES-128-GCM
+                        KDF Id: HKDF-SHA256 (1)
+                        AEAD Id: AES-128-GCM (1)
+                    Config Id: 64
+                    Enc length: 32
+                    Enc: ffb14b62b26b11d2087c15c97cf2529fe3e463a0ea6fb1aec6a3195fc039c83a
+                    Payload length: 144
+                    Payload […]: 9ea23e7fe16ea3525bfca91f9f05c7c29d3860f24d8fc6f09530a8f6d3164c3f2a9b2deb6e2d0a77e188ca9513f89ca857d81c7008112d0455cf9d47328bc8d7a686bf12b5050ba7809cae6a73b445c8a5814dbbac542dc127fbac6aa9791c3df69a2ace86d4c11bdf432cf1eea5ab3e
+                Extension: quic_transport_parameters (len=89)
+                    Type: quic_transport_parameters (57)
+                    Length: 89
+                    Parameter: initial_source_connection_id (len=0)
+                        Type: initial_source_connection_id (0x0f)
+                        Length: 0
+                        Initial Source Connection ID: <MISSING>
+                    Parameter: initial_max_streams_uni (len=2) 103
+                        Type: initial_max_streams_uni (0x09)
+                        Length: 2
+                        Value: 4067
+                        initial_max_streams_uni: 103
+                    Parameter: initial_max_stream_data_bidi_local (len=4) 6291456
+                        Type: initial_max_stream_data_bidi_local (0x05)
+                        Length: 4
+                        Value: 80600000
+                        initial_max_stream_data_bidi_local: 6291456
+                    Parameter: initial_max_stream_data_bidi_remote (len=4) 6291456
+                        Type: initial_max_stream_data_bidi_remote (0x06)
+                        Length: 4
+                        Value: 80600000
+                        initial_max_stream_data_bidi_remote: 6291456
+                    Parameter: initial_max_data (len=4) 15728640
+                        Type: initial_max_data (0x04)
+                        Length: 4
+                        Value: 80f00000
+                        initial_max_data: 15728640
+                    Parameter: initial_max_streams_bidi (len=2) 100
+                        Type: initial_max_streams_bidi (0x08)
+                        Length: 2
+                        Value: 4064
+                        initial_max_streams_bidi: 100
+                    Parameter: google_initial_rtt (len=4) 246635 us
+                        Type: google_initial_rtt (0x3127)
+                        Length: 4
+                        Value: 8003c36b
+                        Google Initial RTT: 246635
+                    Parameter: max_udp_payload_size (len=2) 1472
+                        Type: max_udp_payload_size (0x03)
+                        Length: 2
+                        Value: 45c0
+                        max_udp_payload_size: 1472
+                    Parameter: max_idle_timeout (len=4) 30000 ms
+                        Type: max_idle_timeout (0x01)
+                        Length: 4
+                        Value: 80007530
+                        max_idle_timeout: 30000
+                    Parameter: GREASE (len=9)
+                        Type: GREASE (0x3928e1fa5c6b84)
+                        Length: 9
+                        Value: 564da56b4f261f7200
+                    Parameter: version_information (len=12)
+                        Type: version_information (0x11)
+                        Length: 12
+                        Value: 0000000100000001ca6a2a6a
+                        Chosen Version: 1 (0x00000001)
+                        Other Version: 1 (0x00000001)
+                        Other Version: Unknown (0xca6a2a6a) (GREASE)
+                    Parameter: max_datagram_frame_size (len=4) 65536
+                        Type: max_datagram_frame_size (0x20)
+                        Length: 4
+                        Value: 80010000
+                        max_datagram_frame_size: 65536
+                    Parameter: initial_max_stream_data_uni (len=4) 6291456
+                        Type: initial_max_stream_data_uni (0x07)
+                        Length: 4
+                        Value: 80600000
+                        initial_max_stream_data_uni: 6291456
+                Extension: application_layer_protocol_negotiation (len=5)
+                    Type: application_layer_protocol_negotiation (16)
+                    Length: 5
+                    ALPN Extension Length: 3
+                    ALPN Protocol
+                        ALPN string length: 2
+                        ALPN Next Protocol: h3
+                Extension: application_settings (len=5)
+                    Type: application_settings (17613)
+                    Length: 5
+                    ALPS Extension Length: 3
+                    Supported ALPN List
+                        Supported ALPN Length: 2
+                        Supported ALPN: h3
+                Extension: key_share (len=1258) X25519MLKEM768, x25519
+                    Type: key_share (51)
+                    Length: 1258
+                    Key Share extension
+                        Client Key Share Length: 1256
+                        Key Share Entry: Group: X25519MLKEM768, Key Exchange length: 1216
+                            Group: X25519MLKEM768 (4588)
+                            Key Exchange Length: 1216
+                            Key Exchange […]: 3fd57762249f649b2e720caa1ca3530676691ba723e7b7b594919d61342f222ca53f1a2d967a2f0d9a041f9616da48ba91426dfa54a13bcb5b828328e39b52c22857b832320d5719903ac2d1180d44e25845a1bde394975a8ccae9ba9642b3370f1a0a89e01190d9673549cb94c
+                        Key Share Entry: Group: x25519, Key Exchange length: 32
+                            Group: x25519 (29)
+                            Key Exchange Length: 32
+                            Key Exchange: 14013547257a6f45e5a69abfea6284ba2d0da567faf940c28ead74f270cf2e5f
+                Extension: pre_shared_key (len=251)
+                    Type: pre_shared_key (41)
+                    Length: 251
+                    Pre-Shared Key extension
+                        Identities Length: 198
+                        PSK Identity (length: 192)
+                            Identity Length: 192
+                            Identity […]: a8b3ba26e766ebe209c6193ee2dab12f0910e41a5d9b4ee118a255c2d9d6545976548396f287eff7d21d58d077dce06aff317a4be04e7c70a40603a86c210f323192dbf29d6cefd5ce4ae11df05d73ac242e914acc5c6e9cfd4124a755876bc3217cc9eac1a7f8bab8c674ff3979c8a
+                            Obfuscated Ticket Age: 1946407115
+                        PSK Binders length: 49
+                        PSK Binders
+                            PSK Binder (length: 48)
+                                Binder Length: 48
+                                Binder: 7078f0043490f2044ddecf3ccc60f1d5c1c3f49c322ad8cd3a79ef66261acef31aa0ef856e9461d4d15d8cec371bad96
+                [JA4: q13d0312h3_55b375c5d22e_5a06198afb93]
+                [JA4_r: q13d0312h3_1301,1302,1303_000a,000d,001b,0029,002b,002d,0033,0039,44cd,fe0d_0403,0804,0401,0503,0805,0501,0806,0601,0201]
+                [JA3 Fullstring: 771,4865-4866-4867,27-43-45-0-10-13-65037-57-16-17613-51-41,4588-29-23-24,]
+                [JA3: e6d614e862b939614d8703e48bc42dcd]
+    PING
+        Frame Type: PING (0x0000000000000001)
+    PADDING Length: 36
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 36]
+
+Frame 3: Packet, 1326 bytes on wire (10608 bits), 1326 bytes captured (10608 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:32:26.672868000 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:02:26.672868000 UTC
+    Epoch Arrival Time: 1775743346.672868000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 6.019100 milliseconds]
+    [Time delta from previous displayed frame: 6.019100 milliseconds]
+    [Time since reference or first frame: 6.084800 milliseconds]
+    Frame Number: 3
+    Frame Length: 1326 bytes (10608 bits)
+    Capture Length: 1326 bytes (10608 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:quic]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: 802.1Q Virtual LAN (0x8100)
+    [Stream index: 0]
+802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 0
+    000. .... .... .... = Priority: Best Effort (default) (0)
+    ...0 .... .... .... = DEI: Ineligible
+    .... 0000 0000 0000 = ID: 0
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 151.101.66.214, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 1308
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 57
+    Protocol: UDP (17)
+    Header Checksum: 0x5ba2 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 151.101.66.214
+    Destination Address: 172.16.90.227
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 443, Dst Port: 58477
+    Source Port: 443
+    Destination Port: 58477
+    Length: 1288
+    Checksum: 0xd3fd [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 3]
+    [Timestamps]
+        [Time since first frame: 6.084800 milliseconds]
+        [Time since previous frame: 6.019100 milliseconds]
+    UDP payload (1280 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 1280]
+    1... .... = Header Form: Long Header (1)
+    .1.. .... = Fixed Bit: True
+    ..00 .... = Packet Type: Initial (0)
+    [.... 00.. = Reserved: 0]
+    [.... ..01 = Packet Number Length: 2 bytes (1)]
+    Version: 1 (0x00000001)
+    Destination Connection ID Length: 0
+    Source Connection ID Length: 17
+    Source Connection ID: a8dccce704248a1ef89e518814757f4876
+    Token Length: 0
+    Length: 1253
+    [Packet Number: 0]
+    Payload […]: 77dcdd09485c24eda0111c09a6498527017c8081a39f8299372d84d84db539b6fcb87497e4bdae9d57d58301a5c0e316c6ff21619367a695bfedc38e33ec1e1de404ccc477733e1fceb613c179c6501a54cbf5fba4d9cfa35d6aed98a7dd0920f503573b6120f879a1f18a0b1f448628
+    ACK
+        Frame Type: ACK (0x0000000000000002)
+        Largest Acknowledged: 1
+        ACK Delay: 0
+        ACK Range Count: 0
+        First ACK Range: 0
+    PADDING Length: 1230
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 1230]
+
+Frame 4: Packet, 1326 bytes on wire (10608 bits), 1326 bytes captured (10608 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:32:26.673597900 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:02:26.673597900 UTC
+    Epoch Arrival Time: 1775743346.673597900
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 729.900 microseconds]
+    [Time delta from previous displayed frame: 729.900 microseconds]
+    [Time since reference or first frame: 6.814700 milliseconds]
+    Frame Number: 4
+    Frame Length: 1326 bytes (10608 bits)
+    Capture Length: 1326 bytes (10608 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:quic:tls]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: 802.1Q Virtual LAN (0x8100)
+    [Stream index: 0]
+802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 0
+    000. .... .... .... = Priority: Best Effort (default) (0)
+    ...0 .... .... .... = DEI: Ineligible
+    .... 0000 0000 0000 = ID: 0
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 151.101.66.214, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 1308
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 57
+    Protocol: UDP (17)
+    Header Checksum: 0x5ba2 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 151.101.66.214
+    Destination Address: 172.16.90.227
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 443, Dst Port: 58477
+    Source Port: 443
+    Destination Port: 58477
+    Length: 1288
+    Checksum: 0x9083 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 4]
+    [Timestamps]
+        [Time since first frame: 6.814700 milliseconds]
+        [Time since previous frame: 729.900 microseconds]
+    UDP payload (1280 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 1280]
+    1... .... = Header Form: Long Header (1)
+    .1.. .... = Fixed Bit: True
+    ..00 .... = Packet Type: Initial (0)
+    [.... 00.. = Reserved: 0]
+    [.... ..01 = Packet Number Length: 2 bytes (1)]
+    Version: 1 (0x00000001)
+    Destination Connection ID Length: 0
+    Source Connection ID Length: 17
+    Source Connection ID: a8dccce704248a1ef89e518814757f4876
+    Token Length: 0
+    Length: 1253
+    [Packet Number: 1]
+    Payload […]: ad1455c054e492cf4bbb2f395211aaff42d67bcad445fa041431512d93abdc24a60785febb16954d9ce953448265f770ac883b0d569ac8abb70948531d78cd1e9ffa947d73d16d53adc286d65ac4f5a4962426016c6ee2483f2dd25ba298fb1b61033c24e885d397155259a5ff13e46d
+    ACK
+        Frame Type: ACK (0x0000000000000002)
+        Largest Acknowledged: 2
+        ACK Delay: 0
+        ACK Range Count: 0
+        First ACK Range: 1
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 0
+        Length: 1184
+        Crypto Data
+        TLSv1.3 Record Layer: Handshake Protocol: Server Hello
+            Handshake Protocol: Server Hello
+                Handshake Type: Server Hello (2)
+                Length: 1180
+                Version: TLS 1.2 (0x0303)
+                    [Expert Info (Chat/Deprecated): This legacy_version field MUST be ignored. The supported_versions extension is present and MUST be used instead.]
+                        [This legacy_version field MUST be ignored. The supported_versions extension is present and MUST be used instead.]
+                        [Severity level: Chat]
+                        [Group: Deprecated]
+                Random: 4cd9cc5a69b85f53e3e32ab18b5d18a961999bdc98c7aae47754b67748653e50
+                Session ID Length: 0
+                Cipher Suite: TLS_AES_256_GCM_SHA384 (0x1302)
+                Compression Method: null (0)
+                Extensions Length: 1140
+                Extension: supported_versions (len=2) TLS 1.3
+                    Type: supported_versions (43)
+                    Length: 2
+                    Supported Version: TLS 1.3 (0x0304)
+                Extension: key_share (len=1124) X25519MLKEM768
+                    Type: key_share (51)
+                    Length: 1124
+                    Key Share extension
+                        Key Share Entry: Group: X25519MLKEM768, Key Exchange length: 1120
+                            Group: X25519MLKEM768 (4588)
+                            Key Exchange Length: 1120
+                            Key Exchange […]: 99f4607e88d31ad1c6160cbeed16c94ba2db3c30927b5228ac750a12227be7d818d0799ee48982d523f2776642bd95292664c62a642046ab9a62d5a70b5e78b30fa2e192f72a6e32a08cf6636d6be2029b25e65c3549bd77c19824dd26ac95dc85975052078aa1cfbd2ec6713df
+                Extension: pre_shared_key (len=2)
+                    Type: pre_shared_key (41)
+                    Length: 2
+                    Pre-Shared Key extension
+                        Selected Identity: 0
+                [JA3S Fullstring: 771,4866,43-51-41]
+                [JA3S: 2253c82f03b621c5144709b393fde2c9]
+    PADDING Length: 42
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 42]
+
+Frame 5: Packet, 624 bytes on wire (4992 bits), 624 bytes captured (4992 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:32:26.673597900 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:02:26.673597900 UTC
+    Epoch Arrival Time: 1775743346.673597900
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 6.814700 milliseconds]
+    Frame Number: 5
+    Frame Length: 624 bytes (4992 bits)
+    Capture Length: 624 bytes (4992 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:quic]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: 802.1Q Virtual LAN (0x8100)
+    [Stream index: 0]
+802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 0
+    000. .... .... .... = Priority: Best Effort (default) (0)
+    ...0 .... .... .... = DEI: Ineligible
+    .... 0000 0000 0000 = ID: 0
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 151.101.66.214, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 606
+    Identification: 0x0001 (1)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 57
+    Protocol: UDP (17)
+    Header Checksum: 0x5e5f [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 151.101.66.214
+    Destination Address: 172.16.90.227
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 443, Dst Port: 58477
+    Source Port: 443
+    Destination Port: 58477
+    Length: 586
+    Checksum: 0x0884 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 5]
+    [Timestamps]
+        [Time since first frame: 6.814700 milliseconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (578 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 234]
+    1... .... = Header Form: Long Header (1)
+    .1.. .... = Fixed Bit: True
+    ..10 .... = Packet Type: Handshake (2)
+    Version: 1 (0x00000001)
+    Destination Connection ID Length: 0
+    Source Connection ID Length: 17
+    Source Connection ID: a8dccce704248a1ef89e518814757f4876
+    Length: 208
+    [Expert Info (Warning/Decryption): Failed to create decryption context: Secrets are not available]
+        [Failed to create decryption context: Secrets are not available]
+        [Severity level: Warning]
+        [Group: Decryption]
+    Remaining Payload […]: b6a207a805a14b595af67f1159f71d0653d006cfb7a21d20f2b456145d71825dc64fc2da810a89a659ed10028b3f5a6ca869a7008f95979760c9385724a6a0360689e4ab0b002453ffcfaf8abf2c2659db6b4b6a453a7db3b3a5ceda6ef1b70b161957c73c5a9ab9b1b2a1
+QUIC IETF
+    [Packet Length: 344]
+    QUIC Short Header
+        0... .... = Header Form: Short Header (0)
+        .1.. .... = Fixed Bit: True
+        ..0. .... = Spin Bit: False
+    [Expert Info (Warning/Decryption): Failed to create decryption context: Secrets are not available]
+        [Failed to create decryption context: Secrets are not available]
+        [Severity level: Warning]
+        [Group: Decryption]
+    Remaining Payload […]: 12634c7b3c03b50846bc566d4c55c0c9e8c5564543d7f5ff9bfd9663773b4da0ad61f64114a15be9e6468ccb3f5e009dbc2b260b19c4630c3b09373d9d151282c64d849168832ec1edbed2431e5f5ba3ecd9a2052fa50aedb9699beb640760e4eaca622d2adda056f0d1b4
+
+Frame 6: Packet, 231 bytes on wire (1848 bits), 231 bytes captured (1848 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:32:26.674089900 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:02:26.674089900 UTC
+    Epoch Arrival Time: 1775743346.674089900
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 492.000 microseconds]
+    [Time delta from previous displayed frame: 492.000 microseconds]
+    [Time since reference or first frame: 7.306700 milliseconds]
+    Frame Number: 6
+    Frame Length: 231 bytes (1848 bits)
+    Capture Length: 231 bytes (1848 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:quic]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 217
+    Identification: 0x7437 (29751)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 58477, Dst Port: 443
+    Source Port: 58477
+    Destination Port: 443
+    Length: 197
+    Checksum: 0xe205 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 6]
+    [Timestamps]
+        [Time since first frame: 7.306700 milliseconds]
+        [Time since previous frame: 492.000 microseconds]
+    UDP payload (189 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 103]
+    1... .... = Header Form: Long Header (1)
+    .1.. .... = Fixed Bit: True
+    ..10 .... = Packet Type: Handshake (2)
+    Version: 1 (0x00000001)
+    Destination Connection ID Length: 17
+    Destination Connection ID: a8dccce704248a1ef89e518814757f4876
+    Source Connection ID Length: 0
+    Length: 77
+    [Expert Info (Warning/Decryption): Failed to create decryption context: Secrets are not available]
+        [Failed to create decryption context: Secrets are not available]
+        [Severity level: Warning]
+        [Group: Decryption]
+    Remaining Payload: 27de3cbb4912291827db3297dcfade44103edfb2ec3b5fac64b1d715222bb166ccdef6b890fe2ce5c46f3f013e13d83962311dadc770873f31307ca0c07f095d5aaa65ff5325694402e09326ca
+QUIC IETF
+    [Packet Length: 86]
+    QUIC Short Header DCID=a8dccce704248a1ef89e518814757f4876
+        0... .... = Header Form: Short Header (0)
+        .1.. .... = Fixed Bit: True
+        ..0. .... = Spin Bit: False
+        Destination Connection ID: a8dccce704248a1ef89e518814757f4876
+    Remaining Payload: b820072908db3eb5734af52aea058081cf9a4d838484d741247070600267e0b2d27b21674dfe5c938fe244dee69b2fe4ca459c1861bd3afe7ef6012883459a67e15730f4
+
+Frame 7: Packet, 67 bytes on wire (536 bits), 67 bytes captured (536 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:32:26.679056800 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:02:26.679056800 UTC
+    Epoch Arrival Time: 1775743346.679056800
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 4.966900 milliseconds]
+    [Time delta from previous displayed frame: 4.966900 milliseconds]
+    [Time since reference or first frame: 12.273600 milliseconds]
+    Frame Number: 7
+    Frame Length: 67 bytes (536 bits)
+    Capture Length: 67 bytes (536 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:quic]
+    Character encoding: ASCII (0)
+Ethernet II, Src: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d), Dst: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+    Destination: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 151.101.66.214, Dst: 172.16.90.227
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 53
+    Identification: 0x0000 (0)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 57
+    Protocol: UDP (17)
+    Header Checksum: 0x6089 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 151.101.66.214
+    Destination Address: 172.16.90.227
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 443, Dst Port: 58477
+    Source Port: 443
+    Destination Port: 58477
+    Length: 33
+    Checksum: 0x7742 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 7]
+    [Timestamps]
+        [Time since first frame: 12.273600 milliseconds]
+        [Time since previous frame: 4.966900 milliseconds]
+    UDP payload (25 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 25]
+    QUIC Short Header
+        0... .... = Header Form: Short Header (0)
+        .1.. .... = Fixed Bit: True
+        ..0. .... = Spin Bit: False
+    Remaining Payload: 570d5db29dd1aa7f4f98a6600310fc0ec6bef7ce3f4a2171
+
+Frame 8: Packet, 83 bytes on wire (664 bits), 83 bytes captured (664 bits) on interface \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874})
+        Interface name: \Device\NPF_{9B9257DC-FAC1-4993-B12F-136D7BA5E874}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr  9, 2026 19:32:26.705065800 India Standard Time
+    UTC Arrival Time: Apr  9, 2026 14:02:26.705065800 UTC
+    Epoch Arrival Time: 1775743346.705065800
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 26.009000 milliseconds]
+    [Time delta from previous displayed frame: 26.009000 milliseconds]
+    [Time since reference or first frame: 38.282600 milliseconds]
+    Frame Number: 8
+    Frame Length: 83 bytes (664 bits)
+    Capture Length: 83 bytes (664 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:quic]
+    Character encoding: ASCII (0)
+Ethernet II, Src: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b), Dst: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+    Destination: HewlettPacka_3a:cc:1d (28:92:4a:3a:cc:1d)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 96:77:0b:05:d4:0b (96:77:0b:05:d4:0b)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 0]
+Internet Protocol Version 4, Src: 172.16.90.227, Dst: 151.101.66.214
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 69
+    Identification: 0x7438 (29752)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: UDP (17)
+    Header Checksum: 0x0000 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 172.16.90.227
+    Destination Address: 151.101.66.214
+    [Stream index: 0]
+User Datagram Protocol, Src Port: 58477, Dst Port: 443
+    Source Port: 58477
+    Destination Port: 443
+    Length: 49
+    Checksum: 0xe171 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Stream Packet Number: 8]
+    [Timestamps]
+        [Time since first frame: 38.282600 milliseconds]
+        [Time since previous frame: 26.009000 milliseconds]
+    UDP payload (41 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 41]
+    QUIC Short Header DCID=a8dccce704248a1ef89e518814757f4876
+        0... .... = Header Form: Short Header (0)
+        .1.. .... = Fixed Bit: True
+        ..0. .... = Spin Bit: False
+        Destination Connection ID: a8dccce704248a1ef89e518814757f4876
+    Remaining Payload: 2aef361942f4cdce742e30ec9bc448f8e102accc11043e
+
