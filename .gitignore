@@ -1,5 +1,7 @@
 quic_proj/decrypted/
 quic_proj/raw/
+quic_proj/raw2/
+quic_proj_test
 
 quic_proj/*.pkl
 
