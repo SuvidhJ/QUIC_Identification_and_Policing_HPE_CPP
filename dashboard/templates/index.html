@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        QUIC Traffic Classification Dashboard
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>
+            QUIC Traffic Classification & QoS Engine
+        </h1>
+
+        <div class="live-status">
+            ● LIVE
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <div id="packetCount">0</div>
+            <span>Packets</span>
+        </div>
+
+        <div class="stat-card">
+            <div id="flowCount">0</div>
+            <span>Flows</span>
+        </div>
+
+        <div class="stat-card">
+            <div id="windowCount">0</div>
+            <span>Windows</span>
+        </div>
+
+        <div class="stat-card">
+            <div id="throughput">--</div>
+            <span>Rate</span>
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>
+            Live QUIC Traffic
+        </h2>
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Time</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Length</th>
+                        <th>Flow</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="packetTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="pipeline">
+
+        <div class="stage quic">QUIC</div>
+        <div class="stage flow">FLOW</div>
+        <div class="stage window">WINDOW</div>
+        <div class="stage feature">FEATURES</div>
+        <div class="stage model">MODEL</div>
+        <div class="stage qos">QoS</div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="panel">
+
+            <h2>
+                Active Flows
+            </h2>
+
+            <div class="flow-scroll">
+
+    <div id="flowCards">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="panel">
+
+            <h2>
+                Completed Windows
+            </h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Window</th>
+                            <th>Flow</th>
+                            <th>Packets</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="windowTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="panel">
+
+            <h2>
+                Selected Window
+            </h2>
+
+            <div id="selectedWindow">
+
+                Click a window to inspect features
+
+            </div>
+
+        </div>
+
+        <div class="panel">
+
+            <h2>
+                Feature Vector
+            </h2>
+
+            <table>
+
+                <tbody id="featureTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="panel">
+
+    <h2>
+        Window Predictions
+    </h2>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Window</th>
+                    <th>Flow</th>
+                    <th>Class</th>
+                    <th>Confidence</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="predictionTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+      
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>

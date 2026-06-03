@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0b1020;
+    color:white;
+    font-family:Inter,Arial,sans-serif;
+    padding:24px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:24px;
+}
+
+.live-status{
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:24px;
+}
+
+.stat-card{
+    background:#151b2f;
+    border:1px solid #29314f;
+    border-radius:12px;
+    padding:24px;
+    text-align:center;
+}
+
+.stat-card div{
+    font-size:32px;
+    font-weight:bold;
+}
+
+.stat-card span{
+    color:#9ba3c7;
+}
+
+.section,
+.panel{
+    background:#151b2f;
+    border:1px solid #29314f;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.table-wrapper{
+    height:320px;
+    overflow-y:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1f2745;
+}
+
+th,
+td{
+    padding:10px;
+    border-bottom:1px solid #29314f;
+    text-align:left;
+}
+
+.pipeline{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    margin:24px 0;
+}
+
+.stage{
+    padding:14px 22px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.quic{
+    background:#0066ff;
+}
+
+.flow{
+    background:#00bcd4;
+}
+
+.window{
+    background:#ff9800;
+}
+
+.feature{
+    background:#9c27b0;
+}
+
+.model{
+    background:#4caf50;
+}
+
+.qos{
+    background:#f44336;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+
+.flow-card{
+
+    background:#1f2745;
+    border-radius:10px;
+    padding:14px;
+    margin-bottom:10px;
+
+    border-left:4px solid #00bcd4;
+}
+
+
+.placeholder{
+    font-size:28px;
+    text-align:center;
+    padding:40px;
+    color:#9ba3c7;
+}
+.flow-scroll{
+    height:520px;
+    overflow-y:auto;
+    padding-right:8px;
+}
