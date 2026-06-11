@@ -103,6 +103,7 @@ def extract_packets(pcap_path: str) -> list[dict]:
         TSHARK_PATH,
         "-C", WIRESHARK_PROFILE,
         "-r", pcap_path,
+        "-Y", "quic",
         "-T", "fields",
         "-e", "frame.time_epoch",
         "-e", "ip.src",

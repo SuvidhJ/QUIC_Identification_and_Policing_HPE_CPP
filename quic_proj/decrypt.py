@@ -206,7 +206,7 @@ def extract_content_type_labels(pcap_path: str, keys_file: str) -> dict:
         TSHARK_PATH,
         "-r", os.path.abspath(pcap_path),
         "-o", f"tls.keylog_file:{keys_file}",
-        "-Y", "http3.headers.content_type",   # only packets that have this field
+        "-Y", "quic and http3.headers.content_type",   # only packets that have this field
         "-T", "fields",
         "-e", "ip.src",
         "-e", "ip.dst",
@@ -292,7 +292,7 @@ def extract_sni_labels(pcap_path: str) -> tuple[dict, dict]:
     cmd = [
         TSHARK_PATH,
         "-r", os.path.abspath(pcap_path),
-        "-Y", "tls.handshake.extensions_server_name",
+        "-Y", "quic and tls.handshake.extensions_server_name",
         "-T", "fields",
         "-e", "ip.src",
         "-e", "ip.dst",
