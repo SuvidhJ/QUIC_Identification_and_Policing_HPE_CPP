@@ -1,0 +1,29 @@
+{
+    "selected_model": "XGBoost",
+    "metrics": {
+        "accuracy": 0.9982996811902232,
+        "precision": 0.9974533106960951,
+        "recall": 0.9991496598639455,
+        "f1_score": 0.9983007646559049,
+        "roc_auc": 0.9999907846691587
+    },
+    "confusion_matrix": [
+        [
+            2347,
+            6
+        ],
+        [
+            2,
+            2350
+        ]
+    ],
+    "thresholds": {
+        "quic_threshold": 0.6130922436714172,
+        "quic_probable_threshold": 0.4130922257900238
+    },
+    "dataset": {
+        "total_flows": 98999,
+        "ml_flows": 23522,
+        "balanced_samples_per_class": 11761
+    }
+}

@@ -1,0 +1,53 @@
+transport_protocol
+
+long_header_ratio
+fixed_bit_ratio
+valid_version_ratio
+unique_versions
+
+initial_packet_ratio
+handshake_packet_ratio
+retry_packet_ratio
+zero_rtt_ratio
+version_negotiation_ratio
+
+packet_count
+total_bytes
+duration
+bytes_per_sec
+packets_per_sec
+
+avg_pkt_size
+std_pkt_size
+
+avg_iat
+std_iat
+
+dcid
+scid
+
+src_ip
+dst_ip
+src_port
+dst_port
+
+TRAINING_FEATURES = [
+    "transport_protocol",
+
+    "short_header_ratio",
+    "fixed_bit_ratio",
+    "unique_versions",
+
+    "packet_count",
+    "total_bytes",
+    "duration",
+
+    "bytes_per_sec",
+    "packets_per_sec",
+
+    "avg_pkt_size",
+    "std_pkt_size",
+
+    "avg_iat",
+    "std_iat"
+]
