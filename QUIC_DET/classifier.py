@@ -168,7 +168,7 @@ class QUICDetector:
 
             for key, _ in oldest_tuples:
                 del self.tuple_memory[key]
-        if tier not in ['Tier 1', 'Tier 2']:
+        if tier not in ['Tier 1', 'Tier 2','Tier 3 ML']:
             return
         if label == "QUIC" and confidence >= 0.95:
             now = time.time()
