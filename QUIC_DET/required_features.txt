@@ -35,11 +35,9 @@ TRAINING_FEATURES = [
     "transport_protocol",
 
     "short_header_ratio",
-    "fixed_bit_ratio",
     "unique_versions",
 
     "packet_count",
-    "total_bytes",
     "duration",
 
     "bytes_per_sec",
