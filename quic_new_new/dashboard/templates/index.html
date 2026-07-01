@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIC Traffic Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>QUIC Traffic Classification & QoS Engine</h1>
+        <div class="header-actions">
+            <a href="/qos" class="btn">QoS Monitor</a>
+            <a href="/firewall" class="btn">Firewall</a>
+            <div class="live-badge">Live</div>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-label">QUIC Packets</div>
+            <div class="stat-value" id="packetCount">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Active Flows</div>
+            <div class="stat-value" id="flowCount">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Classified Windows</div>
+            <div class="stat-value" id="windowCount">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Throughput</div>
+            <div class="stat-value" id="throughput">--</div>
+        </div>
+    </div>
+
+    <!-- Pipeline -->
+    <div class="pipeline">
+        <div class="stage quic">Capture</div>
+        <span class="stage-arrow">&rarr;</span>
+        <div class="stage flow">QUIC Detect</div>
+        <span class="stage-arrow">&rarr;</span>
+        <div class="stage window">Window (5s)</div>
+        <span class="stage-arrow">&rarr;</span>
+        <div class="stage feature">Extract Features</div>
+        <span class="stage-arrow">&rarr;</span>
+        <div class="stage model">ML Classify</div>
+        <span class="stage-arrow">&rarr;</span>
+        <div class="stage qos">QoS Enforce</div>
+    </div>
+
+    <!-- Category Filter Buttons -->
+    <div class="category-bar">
+        <span class="category-bar-label">Filter by class:</span>
+        <button class="cat-btn cat-btn-all active" onclick="openCategoryModal('ALL')">
+            All Flows <span class="cat-btn-count" id="catCountAll">0</span>
+        </button>
+        <button class="cat-btn cat-btn-video" onclick="openCategoryModal(1)">
+            Video <span class="cat-btn-count" id="catCount1">0</span>
+        </button>
+        <button class="cat-btn cat-btn-data" onclick="openCategoryModal(2)">
+            Data <span class="cat-btn-count" id="catCount2">0</span>
+        </button>
+        <button class="cat-btn cat-btn-web" onclick="openCategoryModal(0)">
+            Web <span class="cat-btn-count" id="catCount0">0</span>
+        </button>
+        <button class="cat-btn cat-btn-default" onclick="openCategoryModal('DEFAULT')">
+            Default <span class="cat-btn-count" id="catCountDEFAULT">0</span>
+        </button>
+    </div>
+
+    <!-- Category Modal -->
+    <div class="modal-overlay" id="categoryModal" onclick="closeCategoryModal(event)">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modalTitle">Flows</h2>
+                <button class="modal-close" onclick="closeCategoryModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="table-scroll" style="max-height:480px">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Flow #</th>
+                                <th>Class</th>
+                                <th>Hostname (SNI)</th>
+                                <th>Flow Key</th>
+                            </tr>
+                        </thead>
+                        <tbody id="modalFlowTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Packets -->
+    <div class="section">
+        <div class="panel-header">
+            <h2>Live QUIC Packets</h2>
+            <div class="filter-row">
+                <input type="text" class="filter-input" id="filterPacketIp" placeholder="Search IP..." oninput="filterPackets()">
+                <span class="badge" id="packetBadge">last 10</span>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Source IP</th>
+                            <th>Destination IP</th>
+                            <th>Payload (bytes)</th>
+                            <th>Flow Identifier</th>
+                        </tr>
+                    </thead>
+                    <tbody id="packetTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flows + Windows -->
+    <div class="grid">
+
+        <!-- Active Flows -->
+        <div class="panel">
+            <div class="panel-header">
+                <h2>Active Flows</h2>
+                <div class="filter-row">
+                    <input type="text" class="filter-input" id="filterFlowSearch" placeholder="Search host, IP, key..." oninput="renderFlows()">
+                    <span class="badge" id="flowBadge">0 flows</span>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="flow-scroll" id="flowCards">
+                    <div class="empty-state">
+                        <div class="empty-icon">&#8674;</div>
+                        <div class="empty-text">Waiting for QUIC flows...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Completed Windows -->
+        <div class="panel">
+            <div class="panel-header">
+                <h2>Completed Analysis Windows</h2>
+                <span class="click-hint">Click a row to inspect</span>
+            </div>
+            <div class="filter-toolbar">
+                <div class="filter-pills" id="windowClassFilter">
+                    <button class="fpill active" data-cls="all" onclick="setWindowClassFilter('all',this)">All</button>
+                    <button class="fpill fpill-video" data-cls="1" onclick="setWindowClassFilter(1,this)">Video</button>
+                    <button class="fpill fpill-data" data-cls="2" onclick="setWindowClassFilter(2,this)">Data</button>
+                    <button class="fpill fpill-web" data-cls="0" onclick="setWindowClassFilter(0,this)">Web</button>
+                </div>
+                <input type="text" class="filter-input" id="filterWindowSearch" placeholder="Search hostname..." oninput="renderWindows()">
+            </div>
+            <div class="panel-body">
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Window #</th>
+                                <th>Flow #</th>
+                                <th>Hostname</th>
+                                <th>Packets</th>
+                                <th>Predicted Class</th>
+                                <th>Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody id="windowTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Selected Window + Feature Vector -->
+    <div class="grid">
+
+        <div class="panel">
+            <div class="panel-header">
+                <h2>Window Details</h2>
+            </div>
+            <div class="panel-body padded" id="selectedWindow">
+                <div class="empty-state">
+                    <div class="empty-icon">&#9432;</div>
+                    <div class="empty-text">Select a window from the table above to view details</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+                <h2>Extracted Feature Vector</h2>
+            </div>
+            <div class="panel-body padded">
+                <div id="featureContainer">
+                    <div class="empty-state">
+                        <div class="empty-icon">&#9776;</div>
+                        <div class="empty-text">Features appear when a window is selected</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Prediction History -->
+    <div class="panel">
+        <div class="panel-header">
+            <h2>Classification History</h2>
+            <span class="badge" id="predBadge">0 predictions</span>
+        </div>
+        <div class="filter-toolbar">
+            <div class="filter-pills" id="predClassFilter">
+                <button class="fpill active" data-cls="all" onclick="setPredClassFilter('all',this)">All</button>
+                <button class="fpill fpill-video" data-cls="1" onclick="setPredClassFilter(1,this)">Video</button>
+                <button class="fpill fpill-data" data-cls="2" onclick="setPredClassFilter(2,this)">Data</button>
+                <button class="fpill fpill-web" data-cls="0" onclick="setPredClassFilter(0,this)">Web</button>
+            </div>
+            <div class="filter-row">
+                <input type="text" class="filter-input" id="filterPredSearch" placeholder="Search hostname..." oninput="renderPredictions()">
+                <div class="filter-slider-group">
+                    <label class="filter-slider-label">Min confidence:</label>
+                    <input type="range" class="filter-slider" id="filterPredConf" min="0" max="100" value="0" oninput="renderPredictions()">
+                    <span class="filter-slider-value" id="filterPredConfVal">0%</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Window #</th>
+                            <th>Flow #</th>
+                            <th>Predicted Class</th>
+                            <th>Confidence</th>
+                            <th>Hostname (SNI)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="predictionTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='socket.io.min.js') }}"></script>
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>

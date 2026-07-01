@@ -1,0 +1,72 @@
+.back-btn {
+  color: #9ba3c7; text-decoration: none; font-size: 13px;
+  padding: 5px 12px; border: 1px solid #29314f; border-radius: 6px;
+}
+.back-btn:hover { background: #1f2745; }
+
+/* ── Add rule form ───────────────────────────────────────────────────────── */
+.add-rule-form {
+  display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap;
+}
+.form-field { display: flex; flex-direction: column; gap: 5px; }
+.form-field label { font-size: 12px; color: #9ba3c7; }
+.form-field input, .form-field select {
+  background: #0d1224; border: 1px solid #29314f; color: #fff;
+  padding: 8px 12px; border-radius: 7px; font-size: 14px; min-width: 180px;
+  outline: none;
+}
+.form-field input:focus, .form-field select:focus { border-color: #f44336; }
+
+.btn-add {
+  padding: 8px 22px; background: #f44336; color: #fff;
+  border: none; border-radius: 7px; cursor: pointer; font-size: 14px; font-weight: bold;
+}
+.btn-add:hover { background: #d32f2f; }
+
+.btn-clear {
+  padding: 6px 14px; background: transparent; color: #9ba3c7;
+  border: 1px solid #29314f; border-radius: 6px; cursor: pointer; font-size: 12px;
+}
+.btn-clear:hover { background: #1f2745; color: #fff; }
+
+/* ── Rules table ─────────────────────────────────────────────────────────── */
+table { width: 100%; border-collapse: collapse; }
+th    { background: #1f2745; }
+th, td { padding: 10px 12px; border-bottom: 1px solid #1a2035; text-align: left; font-size: 13px; }
+.empty-row { color: #9ba3c7; text-align: center; padding: 24px; }
+
+.cat-badge {
+  display: inline-block; padding: 2px 10px; border-radius: 5px;
+  font-size: 12px; font-weight: bold;
+}
+.cat-all   { background: #f4433622; color: #f44336; }
+.cat-video { background: #f4433622; color: #f44336; }
+.cat-data  { background: #ff980022; color: #ff9800; }
+.cat-web   { background: #2196f322; color: #2196f3; }
+
+.btn-del {
+  padding: 3px 10px; background: transparent; color: #f44336;
+  border: 1px solid #f4433644; border-radius: 5px; cursor: pointer; font-size: 12px;
+}
+.btn-del:hover { background: #f4433622; }
+
+.count-hi { color: #f44336; font-weight: bold; }
+
+/* ── Block log ───────────────────────────────────────────────────────────── */
+.block-log {
+  height: 260px; overflow-y: auto; font-family: monospace; font-size: 12px;
+  line-height: 1.8; background: #0d1224; padding: 10px 14px; border-radius: 8px;
+  color: #c8d0e8;
+}
+.bl-block  { color: #f44336; }
+.bl-add    { color: #ff9800; }
+.bl-remove { color: #9ba3c7; }
+
+/* ── Breakdown ───────────────────────────────────────────────────────────── */
+.bkd-row {
+  display: grid; grid-template-columns: 120px 1fr 80px;
+  align-items: center; gap: 10px; margin-bottom: 10px; font-size: 13px;
+}
+.bkd-bar-wrap { background: #0d1224; border-radius: 4px; height: 18px; overflow: hidden; }
+.bkd-bar      { height: 100%; border-radius: 4px; transition: width 0.5s ease; background: #f44336; }
+.bkd-val      { text-align: right; font-size: 12px; color: #c8d0e8; }

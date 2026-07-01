@@ -1,0 +1,94 @@
+.back-btn {
+  color: #9ba3c7; text-decoration: none; font-size: 13px;
+  padding: 6px 12px; border: 1px solid #29314f; border-radius: 6px;
+}
+.back-btn:hover { background: #1f2745; }
+
+.badge { font-size: 13px; font-weight: bold; padding: 5px 12px; border-radius: 6px; }
+.badge-ok  { background: #1b3a2d; color: #00ff88; }
+.badge-off { background: #3a2020; color: #ff6b6b; }
+
+/* ── Queue lanes ─────────────────────────────────────────────────────────── */
+.queue-lane {
+  display: grid;
+  grid-template-columns: 130px 1fr 80px 80px 70px 90px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #1a2035;
+  transition: opacity 0.4s;
+}
+.queue-lane:last-child { border-bottom: none; }
+.queue-lane.q-inactive { opacity: 0.45; }
+
+.q-label { display: flex; align-items: center; gap: 8px; font-weight: bold; font-size: 14px; }
+.q-dot   { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.q-priority-label { font-size: 10px; font-weight: normal; margin-top: 2px; }
+
+.q-bar-col { display: flex; flex-direction: column; gap: 4px; }
+.q-bar-wrap {
+  position: relative; height: 24px;
+  background: #0d1224; border-radius: 5px; overflow: hidden;
+}
+.q-bar-min {
+  position: absolute; top: 0; bottom: 0; left: 0;
+  border-radius: 5px; transition: width 0.7s ease;
+}
+.q-bar-live {
+  position: absolute; top: 0; bottom: 0; left: 0;
+  border-radius: 5px; transition: width 0.5s ease; opacity: 0.9;
+}
+.q-bar-legend { font-size: 10px; color: #9ba3c7; }
+
+.q-stat { text-align: right; }
+.q-stat .val { font-size: 17px; font-weight: bold; }
+.q-stat .lbl { font-size: 10px; color: #9ba3c7; }
+
+/* ── Allocation pie ──────────────────────────────────────────────────────── */
+.pie-row {
+  display: grid;
+  grid-template-columns: 12px 65px 1fr 80px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.pie-bar-wrap { background: #0d1224; border-radius: 4px; height: 18px; overflow: hidden; }
+.pie-bar      { height: 100%; border-radius: 4px; transition: width 0.7s ease; }
+.pie-pct      { text-align: right; font-size: 11px; color: #c8d0e8; }
+
+/* ── Config grid ─────────────────────────────────────────────────────────── */
+.config-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+.config-card {
+  background: #1f2745; border-radius: 10px; padding: 16px;
+  border-top: 3px solid #29314f;
+}
+.config-card h3  { font-size: 13px; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+.config-card label { font-size: 11px; color: #9ba3c7; display: block; margin: 8px 0 3px; }
+.config-card input[type=range] { width: 100%; }
+.config-card .range-val { font-size: 11px; color: #c8d0e8; text-align: right; }
+.config-card button {
+  margin-top: 10px; width: 100%; padding: 6px;
+  background: #29314f; color: #fff; border: none; border-radius: 6px;
+  cursor: pointer; font-size: 12px;
+}
+.config-card button:hover { background: #3a4568; }
+.config-card .applied-note { font-size: 11px; text-align: center; margin-top: 4px; height: 14px; }
+
+/* ── Event log ───────────────────────────────────────────────────────────── */
+.event-log {
+  height: 160px; overflow-y: auto;
+  font-family: monospace; font-size: 12px; line-height: 1.7;
+  background: #0d1224; padding: 8px 12px; border-radius: 8px; color: #c8d0e8;
+}
+.ev-rule     { color: #00ff88; }
+.ev-classify { color: #ffeb3b; font-weight: bold; }
+.ev-config   { color: #ff9800; }
+.ev-error    { color: #f44336; }
+.ev-info     { color: #9ba3c7; }
+
+/* ── OF table badge ──────────────────────────────────────────────────────── */
+.q-badge {
+  display: inline-block; padding: 2px 8px;
+  border-radius: 4px; font-size: 11px; font-weight: bold;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QoS Monitor – OVS HTB</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='qos.css') }}">
+</head>
+<body>
+
+<div class="header">
+  <div style="display:flex;align-items:center;gap:16px">
+    <a href="/" class="back-btn">← Dashboard</a>
+    <a href="/firewall" class="back-btn" style="color:#ff6b6b;border-color:#f4433644">🔒 Firewall</a>
+    <div>
+      <h1 style="margin:0">QoS Monitor</h1>
+      <div style="font-size:12px;color:#9ba3c7;margin-top:2px">
+        OVS HTB · s1-eth2 · 10 Mbps · QUIC traffic only
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px">
+    <span id="qosStatus" class="badge badge-off">● Initialising</span>
+    <span class="live-status">● LIVE</span>
+  </div>
+</div>
+
+<!-- Top stats -->
+<div class="stats" style="grid-template-columns:repeat(5,1fr)">
+  <div class="stat-card"><div id="totalKbps">0.0</div><span>Total kbps</span></div>
+  <div class="stat-card"><div id="classifiedFlows">0</div><span>Classified Flows</span></div>
+  <div class="stat-card"><div id="ofRules">0</div><span>OF Rules in OVS</span></div>
+  <div class="stat-card"><div id="defaultPct">—</div><span>Default Queue %</span></div>
+  <div class="stat-card"><div id="lastUpdate">—</div><span>Last Stats Update</span></div>
+</div>
+
+<!-- Bandwidth allocation + live bars -->
+<div class="grid" style="grid-template-columns:2fr 1fr">
+
+  <div class="section" style="margin-bottom:0">
+    <h2>Live Queue Throughput
+      <em style="font-size:11px;color:#9ba3c7;margin-left:8px">
+        real kernel HTB counters · tc -s class show dev s1-eth2
+      </em>
+    </h2>
+    <div id="queueLanes"></div>
+  </div>
+
+  <div class="section" style="margin-bottom:0">
+    <h2>Bandwidth Allocation
+      <em style="font-size:11px;color:#9ba3c7;margin-left:4px">dynamic</em>
+    </h2>
+    <p style="font-size:12px;color:#9ba3c7;margin-bottom:12px">
+      Updated live in OVS when a new traffic class is first detected.
+      Default queue gets full link until classes emerge.
+    </p>
+    <div id="allocPie"></div>
+  </div>
+
+</div>
+
+<!-- Chart -->
+<div class="section">
+  <h2>Per-Queue Throughput History
+    <em style="font-size:11px;color:#9ba3c7;margin-left:8px">kbps · 60 s · real HTB counters</em>
+  </h2>
+  <canvas id="bwChart" height="80"></canvas>
+</div>
+
+<!-- OF rules + flow assignments -->
+<div class="grid">
+
+  <div class="panel">
+    <h2>Classified Flow Rules
+      <em style="font-size:11px;color:#9ba3c7;margin-left:4px">ovs-ofctl dump-flows s1 (priority=100 only)</em>
+    </h2>
+    <div class="table-wrapper" style="height:280px">
+      <table>
+        <thead><tr>
+          <th>Src IP</th><th>Dst IP</th><th>Src Port</th><th>Dst Port</th>
+          <th>Queue</th><th>Packets</th><th>Bytes</th>
+        </tr></thead>
+        <tbody id="ofTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Flow → Queue Assignments</h2>
+    <div class="table-wrapper" style="height:280px">
+      <table>
+        <thead><tr>
+          <th>Flow Key</th><th>Class</th><th>Queue</th><th>Time</th>
+        </tr></thead>
+        <tbody id="flowQueueTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- Config -->
+<div class="section">
+  <h2>Override Queue Bandwidth
+    <em style="font-size:11px;color:#9ba3c7;margin-left:4px">changes pushed live via ovs-vsctl set queue</em>
+  </h2>
+  <p style="font-size:12px;color:#9ba3c7;margin-bottom:14px">
+    Dynamic allocation is automatic. Use these controls to manually override if needed.
+  </p>
+  <div id="configPanels" class="config-grid"></div>
+</div>
+
+<!-- Event log -->
+<div class="section">
+  <h2>Event Log</h2>
+  <div id="eventLog" class="event-log"></div>
+</div>
+<script src="{{ url_for('static', filename='socket.io.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="{{ url_for('static', filename='qos.js') }}"></script>
+</body>
+</html>

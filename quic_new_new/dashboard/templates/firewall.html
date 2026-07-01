@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Firewall – OVS Drop Rules</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='firewall.css') }}">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div style="display:flex;align-items:center;gap:14px">
+    <a href="/" class="back-btn">← Dashboard</a>
+    <a href="/qos" class="back-btn">QoS Monitor</a>
+    <div>
+      <h1 style="margin:0">Firewall</h1>
+      <div style="font-size:12px;color:#9ba3c7;margin-top:2px">
+        OVS OpenFlow drop rules · priority 200 · QUIC traffic
+      </div>
+    </div>
+  </div>
+  <span class="live-status">● LIVE</span>
+</div>
+
+<!-- Top stats -->
+<div class="stats" style="grid-template-columns:repeat(4,1fr)">
+  <div class="stat-card"><div id="totalRules">0</div><span>Active Rules</span></div>
+  <div class="stat-card"><div id="totalBlocked">0</div><span>Total Blocked Pkts</span></div>
+  <div class="stat-card"><div id="totalBlockedBytes">0</div><span>Total Blocked Bytes</span></div>
+  <div class="stat-card"><div id="lastBlockedAt">—</div><span>Last Block Event</span></div>
+</div>
+
+<!-- Add rule -->
+<div class="section">
+  <h2>Add Block Rule</h2>
+  <p style="font-size:12px;color:#9ba3c7;margin-bottom:14px">
+    Rules are installed as real OpenFlow drop actions in OVS (priority 200, beats QoS rules).
+    <br>
+    <b>ALL</b>: drops immediately for any QUIC packet to that IP.
+    <b>Category</b>: drops only when a flow to that IP is classified as that category.
+  </p>
+  <div class="add-rule-form">
+    <div class="form-field">
+      <label>Destination IP</label>
+      <input type="text" id="inputIp" placeholder="e.g. 10.0.0.2" spellcheck="false">
+    </div>
+    <div class="form-field">
+      <label>Destination Port</label>
+      <input type="text" id="inputPort" placeholder="any" spellcheck="false" style="min-width:100px">
+    </div>
+    <div class="form-field">
+      <label>Category</label>
+      <select id="inputCat">
+        <option value="ALL">ALL (any traffic)</option>
+        <option value="1">Video (class 1)</option>
+        <option value="2">Data (class 2)</option>
+        <option value="0">Web (class 0)</option>
+      </select>
+    </div>
+    <button class="btn-add" onclick="addRule()">+ Add Rule</button>
+  </div>
+  <div id="addRuleMsg" style="font-size:12px;margin-top:8px;height:16px"></div>
+</div>
+
+<!-- Active rules table -->
+<div class="section">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+    <h2 style="margin:0">Active Block Rules
+      <em style="font-size:11px;color:#9ba3c7;margin-left:6px">
+        counters from ovs-ofctl dump-flows · updated every second
+      </em>
+    </h2>
+    <button class="btn-clear" onclick="clearAll()">Clear All Rules</button>
+  </div>
+  <table>
+    <thead><tr>
+      <th>Rule ID</th>
+      <th>Destination IP</th>
+      <th>Port</th>
+      <th>Category</th>
+      <th>OF Matches Installed</th>
+      <th>Blocked Packets</th>
+      <th>Blocked Bytes</th>
+      <th>Added</th>
+      <th></th>
+    </tr></thead>
+    <tbody id="rulesTable">
+      <tr><td colspan="9" class="empty-row">No rules — add one above</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Live block events -->
+<div class="grid">
+
+  <div class="panel">
+    <h2>Live Block Events
+      <em style="font-size:11px;color:#9ba3c7;margin-left:4px">fired when a flow is first matched</em>
+    </h2>
+    <div id="blockLog" class="block-log"></div>
+  </div>
+
+  <div class="panel">
+    <h2>Blocked Traffic Breakdown</h2>
+    <div id="breakdown"></div>
+  </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='socket.io.min.js') }}"></script>
+<script src="{{ url_for('static', filename='firewall.js') }}"></script>
+</body>
+</html>

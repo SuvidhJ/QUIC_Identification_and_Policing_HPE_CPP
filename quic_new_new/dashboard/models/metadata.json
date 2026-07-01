@@ -1,0 +1,63 @@
+{
+    "selected_model": "XGBoost",
+    "quic_threshold": 0.6130922436714172,
+    "quic_probable_threshold": 0.4130922257900238,
+    "training_features": [
+        "short_header_ratio",
+        "unique_versions",
+        "packet_count",
+        "duration",
+        "bytes_per_sec",
+        "packets_per_sec",
+        "avg_pkt_size",
+        "std_pkt_size",
+        "avg_iat",
+        "std_iat"
+    ],
+    "training_timestamp": "2026-06-21T15:13:12.949195",
+    "cross_validation": {
+        "rf_mean_auc": 0.9999504999403717,
+        "rf_std_auc": 3.230473154977433e-05,
+        "xgb_mean_auc": 0.999964952018669,
+        "xgb_std_auc": 2.0824595618308627e-05
+    },
+    "validation_auc": {
+        "random_forest": 0.9999578985865489,
+        "xgboost": 0.999960970363496
+    },
+    "test_metrics": {
+        "accuracy": 0.9982996811902232,
+        "precision": 0.9974533106960951,
+        "recall": 0.9991496598639455,
+        "f1_score": 0.9983007646559049,
+        "roc_auc": 0.9999907846691587
+    },
+    "confusion_matrix": [
+        [
+            2347,
+            6
+        ],
+        [
+            2,
+            2350
+        ]
+    ],
+    "feature_importances": {
+        "short_header_ratio": 0.3566587567329407,
+        "unique_versions": 0.27974724769592285,
+        "avg_pkt_size": 0.17153137922286987,
+        "packet_count": 0.08834722638130188,
+        "bytes_per_sec": 0.03509977459907532,
+        "std_pkt_size": 0.026663923636078835,
+        "std_iat": 0.013745791278779507,
+        "packets_per_sec": 0.01281192246824503,
+        "avg_iat": 0.012372136116027832,
+        "duration": 0.0030218667816370726
+    },
+    "dataset": {
+        "total_flows": 98999,
+        "ml_flows": 23522,
+        "balanced_samples_per_class": 11761
+    },
+    "num_features": 10
+}
