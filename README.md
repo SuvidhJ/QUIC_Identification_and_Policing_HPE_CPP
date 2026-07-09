@@ -4,7 +4,7 @@ An end-to-end network management system that performs **real-time QUIC packet cl
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 * **Real-time Packet Capture & Parsing**: Mirrors traffic to a dedicated classification host (`hc`) via OVS port mirroring, parsing UDP/QUIC streams in real-time.
 * **ML-based Traffic Classification**: Evaluates statistical flow features across 5-second sliding windows using a Random Forest model (`model.pkl`) to identify categories: **Video**, **Data**, or **Web**.
@@ -44,7 +44,7 @@ An end-to-end network management system that performs **real-time QUIC packet cl
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 ├── topology.py             # Mininet network configuration and virtual topology creator
@@ -70,7 +70,7 @@ An end-to-end network management system that performs **real-time QUIC packet cl
 
 ---
 
-## 🛠️ Installation & Dependencies
+## Installation & Dependencies
 
 To set up the workspace on your machine or inside the Mininet VM, run:
 
@@ -120,7 +120,7 @@ mininet> h1 tcpreplay -i h1-eth0 --pps=500 /home/hpe/quic_new_new/capture2.pcap
 
 ---
 
-## 📶 QoS Lane Configurations
+##  QoS Lane Configurations
 
 Classified flows are steered to distinct queues on port `s1-eth2` by priority-100 OpenFlow rules:
 
@@ -135,7 +135,7 @@ Bandwidth limits can be adjusted dynamically in the **QoS Monitor** tab, which a
 
 ---
 
-## 🛡️ Firewall & ACL Management
+##  ACL Management
 
 OpenFlow Drop Rules (priority 200) override the QoS rules to drop packets instantly in the kernel. The firewall supports three modes:
 
