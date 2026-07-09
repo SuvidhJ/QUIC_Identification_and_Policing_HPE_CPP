@@ -94,7 +94,7 @@ To set up the workspace on your machine or inside the Mininet VM, run:
 
 ---
 
-## ⚡ Running the Project
+##  Running the Project
 
 ### Step 1: Start the Mininet Network
 Launch the network emulator. This script constructs the switches, links, configures initial QoS ports, and mirrors packet captures:
