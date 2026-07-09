@@ -1,4 +1,4 @@
-# QUIC QoS & ACL Classification System
+# QUIC Classification and Policing
 
 An end-to-end network management system that performs **real-time QUIC packet classification** using Machine Learning, dynamically adjusts **Quality of Service (QoS)** bandwidth allocations using Open vSwitch (OVS) Hierarchy Token Bucket (HTB), and enforces **Access Control Lists (ACL)** via bidirectional OpenFlow drop rules.
 
